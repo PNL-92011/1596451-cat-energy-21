@@ -1,0 +1,82 @@
+@oswald: "Oswald", Arial, sans-serif;
+
+.page-main {
+  width: 320px;
+
+  /*outline: 3px solid skyblue;
+  outline-offset: -2px;*/
+
+  &__cat {
+    width: 320px;
+    margin: 0 auto;
+    padding: 0;
+    position: absolute;
+
+    /*попробовать другой формат для большей четкости картинки */
+  }
+
+  &__rect {
+    width: 320px;
+    height: 302px;
+    background-color: fade(@basic-green, 85%);
+    position: relative;
+  }
+
+  &__container {
+    padding: 0px 20px;
+
+    outline: 2px solid skyblue;
+    outline-offset: -2px;
+  }
+
+  &__title {
+    font-family: @oswald;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    color: @basic-white;
+    text-align: center;
+    margin-top: -277px;
+    margin-bottom: 27px;
+    position: relative;
+    z-index: 3;
+  }
+
+  &__slogan {
+    font-family: @oswald;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: @basic-white;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+
+    /*outline: 1px solid green;
+    outline-offset: -1px;*/
+  }
+
+  &__can {
+    position: relative;
+    z-index: 3;
+    margin-top: 30px;
+  }
+
+
+  &__title-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 40px;
+    background-color: @basic-green;
+  }
+
+  &__programm {
+    text-decoration: none;
+    color: @basic-white;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

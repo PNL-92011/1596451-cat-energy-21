@@ -3,6 +3,7 @@
 
 
 .programms {
+  margin-top: 22px;
 
   &__wrapper {
     height: 266px;
@@ -26,7 +27,7 @@
     font-weight: normal;
     text-align: left;
     text-transform: uppercase;
-    color:@basic-black;
+    color: @basic-black;
 
 
     display: block;
@@ -35,15 +36,15 @@
 
 
   &__wrapper-title::before {
-     content: " ";
-     display: block;
-     background-color: @basic-green;
-     width: 50px;
-     height: 50px;
-     border-radius: 100%;
-     position: absolute;
-     top: -5px;
-   }
+    content: " ";
+    display: block;
+    background-color: @basic-green;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: absolute;
+    top: -5px;
+  }
 
   &__title::after {
     content: " ";
@@ -69,8 +70,8 @@
     position: absolute;
     top: 8px;
     left: -9px;
-
   }
+
   /* подвинуть заголовок !!! */
 
   &__text {
@@ -82,12 +83,12 @@
   }
 
   &__line {
-     width: 240px;
-     height: 0px;
-     border: 1px solid;
-     color: @special-light-grey;
-     margin: 23px 0px 19px 0px;
-   }
+    width: 240px;
+    height: 0;
+    border: 1px solid;
+    color: @special-light-grey;
+    margin: 27px 0 20px 0;
+  }
 
   &__link-catalog {
     text-decoration: none;
@@ -95,13 +96,14 @@
     font-size: 16px;
     line-height: 16px;
     position: relative;
+    margin-bottom: 22px;
   }
 
-   &__link-catalog::after {
+  &__link-catalog::after {
     content: " ";
     display: block;
     position: absolute;
-    background-image: url(../../img/icon_arrow.svg);
+    background-image: url("../../img/icon_arrow.svg");
     width: 24px;
     height: 12px;
     background-repeat: no-repeat;

@@ -85,54 +85,61 @@
           </ul>
         </div>
       </section>
-
-      <section class="example">
-        <div class="example__wrapper">
-          <h2 class="example__title">Живой пример</h2>
-          <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-            Slim.
-            Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
-            часов в день.</p>
-          <dl class="example__stats-list">
-            <div class="example__stats-item">
-              <dt class="example__stats-number">5 кг</dt>
-              <dd class="example__stats-entry">снижение веса</dd>
-            </div>
-            <div class="example__stats-item">
-              <dt class="example__stats-number">60 дней</dt>
-              <dd class="example__stats-entry">затрачено времени</dd>
-            </div>
-          </dl>
-          <p>ЗАТРАТЫ НА ПИТАНИЕ: 15 000 РУБ.</p>
-          <div class="vary slider">
-            <ul class="vary__list">
-              <li class="vary__item vary__item--before slider__item">жирный кот</li>
-              <li class="vary__item vary__item--after  slider__item">худой кот</li>
-            </ul>
-            <div class="vary__toggled slider__toggles">
-              <button class="slider__toggle slider__toggle--current" type="button">БЫЛО</button>
-              <div>здесь будет полоска с бегунком/переключателем</div>
-              <button class="slider__toggle" type="button">СТАЛО</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="contacts">
-        <div class="contacts__wrapper">
-          <h2 class="visually-hidden">Адрес и приглашение</h2>
-          <div class="contacts__info">
-            <div class="contacts__inviting inviting">
-              <p class="inviting__text">ПРИГЛАШАЕМ<br>К СОТРУДНИЧЕСТВУ<br>ДИЛЕРОВ</p>
-            </div>
-            <div class="contacts__address address">
-              <p class="address__text">ул.Большая<br>Конюшевская, д.19/8<br>Санкт-Петербург</p>
-            </div>
-          </div>
-
-          <img src="img.jpg" alt="карта">
-        </div>
-      </section>
     </div>
+
+    <section class="example">
+      <div class="example__wrapper">
+        <h2 class="example__title">Живой пример</h2>
+        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+          Slim.
+          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+          часов в день.</p>
+        <div class="example__stats-list">
+          <div class="example__stats-item">
+            <span class="example__stats-number">5 кг</span>
+            <span class="example__stats-entry">снижение веса</span>
+          </div>
+          <div class="example__stats-item">
+            <span class="example__stats-number example__stats-number--days">60 дней</span>
+            <span class="example__stats-entry">затрачено времени</span>
+          </div>
+        </div>
+        <p class="example__costs"> ЗАТРАТЫ НА ПИТАНИЕ: 15 000 РУБ. </p>
+        <div class="example__cat-before"> <img src="img/cat_before_mobile_1.png" width=311 height=232
+            alt="фото жирного кота">
+        </div>
+        <div class="example__slider slider">
+          <!-- <ul class="vary__list">
+            <li class="vary__item vary__item--before slider__item">жирный кот</li>
+            <li class="vary__item vary__item--after  slider__item">худой кот</li>
+          </ul> -->
+          <div class="slider__toggles">
+            <button class="slider__switcher slider__switcher--current" type="button">БЫЛО</button>
+            <div class="slider__plank">
+              <div class="slider__plank-core"> </div>
+            </div>
+            <button class="slider__switcher" type="button">СТАЛО</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <h2 class="visually-hidden">Адрес и приглашение</h2>
+        <div class="contacts__info">
+          <div class="contacts__inviting inviting">
+            <p class="inviting__text">ПРИГЛАШАЕМ<br>К СОТРУДНИЧЕСТВУ<br>ДИЛЕРОВ</p>
+          </div>
+          <div class="contacts__address address">
+            <p class="address__text">ул.Большая<br>Конюшевская, д.19/8<br>Санкт-Петербург</p>
+          </div>
+        </div>
+
+        <img src="img.jpg" alt="карта">
+      </div>
+    </section>
+
   </main>
 
   <footer class="page-footer">

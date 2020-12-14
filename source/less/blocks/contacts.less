@@ -1,3 +1,37 @@
 .contacts {
   margin: 0;
+  padding: 1px;
+
+  /*outline: 1px solid green;
+  outline-offset: -1px;*/
+
+  &__info {
+    display: flex;
+    padding: 0 19px;
+    justify-content: space-between;
+  }
+
+  .inviting {
+    font-family: @oswald;
+    color: @invite;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    margin: 12px 0;
+  }
+
+  .address {
+    font-family: @arial;
+    color: @special-dark-grey;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 15px 0;
+  }
+
+  &__map {
+    width: 320px;
+    height: 362px;
+    display: block;
+    border: none;
+  }
 }

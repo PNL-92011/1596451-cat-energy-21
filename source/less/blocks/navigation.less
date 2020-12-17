@@ -1,0 +1,82 @@
+.main-nav {
+  margin: 0;
+
+  /*outline: 3px dashed green;
+  outline-offset: -1px;*/
+
+  &__wrapper {
+    padding-bottom: 24px;
+    position: relative;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 1px;
+    list-style: none;
+    text-align: center;
+  }
+
+  &__item {
+    margin-top: 48px;
+  }
+
+  &__item:first-child {
+    margin-top: 24px;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-family: @oswald;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: @basic-black;
+  }
+
+  &__link:hover {
+    color: fade(@basic-black, 60%);
+  }
+
+  &__link:active {
+    color: fade(@basic-black, 80%);
+  }
+
+  &__link::before {
+    content: " ";
+    position: absolute;
+    width: 320px;
+    height: 0;
+    left: 0;
+    top: 0;
+    border: 1px solid @color-decor;
+  }
+
+  &__link--catalog::before {
+    content: " ";
+    position: absolute;
+    width: 320px;
+    height: 0;
+    left: 0;
+    top: 70px;
+    border: 1px solid @color-decor;
+  }
+
+  &__link--programm::before {
+    content: " ";
+    position: absolute;
+    width: 320px;
+    height: 0;
+    left: 0;
+    top: 140px;
+    border: 1px solid @color-decor;
+  }
+
+  .current {
+    text-decoration: underline;
+    text-decoration-color: @basic-green;
+    text-underline-position: under;
+    text-decoration-style: solid;
+    text-decoration-thickness: 2px;
+  }
+}

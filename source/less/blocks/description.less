@@ -1,23 +1,18 @@
-.description {
-  &__title {
+  .description__title {
     font-size: 36px;
     line-height: 40px;
     font-family: @oswald;
     font-weight: 400;
-    margin: 40px 0;
+    margin: 25px 0;
   }
 
-  /*&__wrapper {
-    Убрать - ?!
-  }*/
-
-  &__list {
+  .description__list {
     list-style: none;
-    margin: 0;
+    margin-top: 10px;
     padding: 0;
   }
 
-  &__item {
+  .description__item {
     font-family: @arial;
     font-weight: normal;
     font-size: 14px;
@@ -28,11 +23,11 @@
     position: relative;
   }
 
-  &__item:last-child {
+  .description__item:last-child {
     margin-bottom: 37px;
   }
 
-  &__item::before {
+  .description__item::before {
     content: " ";
     position: absolute;
     display: block;
@@ -43,47 +38,46 @@
     top: -3px;
   }
 
-  &__item--leaf::after {
+  .description__item--leaf::after {
     content: " ";
     position: absolute;
     width: 30px;
     height: 32px;
-    background-image: url("../../img/icon_leaf.svg");
+    background-image: url("../../img/icon-leaf.svg");
     background-repeat: no-repeat;
     left: 16px;
     top: 11px;
   }
 
-  &__item--tub::after {
+  .description__item--tub::after {
     content: " ";
     position: absolute;
     width: 29px;
     height: 31px;
-    background-image: url("../../img/icon_tub.svg");
+    background-image: url("../../img/icon-tub.svg");
     background-repeat: no-repeat;
     left: 15px;
     top: 10px;
   }
 
-  &__item--eat::after {
+  .description__item--eat::after {
     content: " ";
     position: absolute;
     width: 25px;
     height: 30px;
-    background-image: url("../../img/icon_eat.svg");
+    background-image: url("../../img/icon-eat.svg");
     background-repeat: no-repeat;
     left: 18px;
     top: 13px;
   }
 
-  &__item--alarm::after {
+  .description__item--alarm::after {
     content: " ";
     position: absolute;
     width: 32px;
     height: 33px;
-    background-image: url("../../img/icon_alarm.svg");
+    background-image: url("../../img/icon-alarm.svg");
     background-repeat: no-repeat;
     left: 14px;
     top: 10px;
   }
-}

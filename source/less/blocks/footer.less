@@ -1,106 +1,54 @@
-.page-footer {
-  margin: 0;
+.footer {
   padding: 0 20px;
   background-color: @basic-grey;
+  text-align: center;
+}
 
-  &__wrapper {
-    padding: 1px;
-  }
+.footer__logo {
+  margin-top: 39px;
+  margin-bottom: 32px;
+}
 
-  &__logo {
-    display: flex;
-    justify-content: center;
-    margin-top: 39px;
-    margin-bottom: 32px;
-  }
+.footer__social-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 0;
 
-  &__decor-line {
-    width: 280px;
-    height: 0;
-    border: 1px solid @special-light-grey;
-  }
+  /*outline: 2px dashed green;
+  outline-offset: -2px;*/
+}
 
-  .social__list {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    flex-wrap: wrap;
-    padding: 0;
-    margin-top: 20px;
-    margin-bottom: 21px;
-  }
+.footer__social-item {
+  margin: 0 12px;
+}
 
-  .social__item {
-    margin-right: 25px;
-  }
+.footer__social-link {
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 20px;
+  color: white;
+  justify-content: center;
+  text-align: center;
+}
 
-  .social__item:first-child {
-    margin-left: 25px;
-  }
+.footer__social-icon {
+  fill: @special-grey-2;
+}
 
-  .social__link {
-    display: flex;
-    align-items: center;
-    width: 30px;
-    height: 20px;
-    color: white;
+.footer__social-path {
+  fill: none;
+  stroke: @special-grey-2;
+}
 
-    justify-content: center;
-    text-align: center;
-  }
+.footer__social-icon:hover,
+.footer__social-path:hover {
+  stroke: @basic-green;
+}
 
-  .social__svg {
-    fill: @special-grey-2;
-  }
-
-  .social__path {
-    fill: none;
-    stroke: @special-grey-2;
-  }
-
-  .social__svg:hover,
-  .social__path:hover {
-    stroke: @basic-green;
-  }
-
-  .social__svg:active,
-  .social__path:active {
-    stroke: fade(@basic-green, 30%);
-  }
-
-  &__copyright {
-    display: flex;
-    justify-content: space-between;
-    margin: 28px 0;
-  }
-
-  .copyright {
-    align-items: center;
-
-    &__link,
-    &__link:hover {
-      font-family: @arial;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 18px;
-      text-decoration: none;
-      color: @special-dark-grey;
-    }
-
-    &__link:active {
-      color: fade(@special-dark-grey, 30%);
-    }
-
-    &__svg {
-      fill: @special-grey-2;
-    }
-
-    &__svg:hover {
-      fill: @basic-green;
-    }
-
-    &__svg:active {
-      fill: fade(@basic-green, 30%);
-    }
-  }
+.footer__social-icon:active,
+.footer__social-path:active {
+  stroke: fade(@basic-green, 30%);
 }

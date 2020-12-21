@@ -8,25 +8,18 @@
 
 <body class="body body--form">
 
-  <header class="page-header">
-    <div class="page-header__logo">
-      <img class="page-header__logo-mobile" src="img.svg" width="34" height="38" alt="иконка кота">
-      <a class="page-header__logo-image">
-        <img src="img.svg" width="101" height="18" alt="Cat Energy">
-      </a>
-    </div>
+  <header class="header">
+    <!-- <div class="header__logo"> -->
+      <img class="header__logo-mobile" src="img/logo-icon-mobile.svg" width="34" height="38" alt="иконка кота">
+      <a class="header__logo-image"><img src="img/logo-cat-energy.svg" width="101" height="18" alt="Cat Energy"></a>
+    <!-- </div> -->
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="main-nav__wrapper">
+      <button class="main-nav__close" type="button" aria-label="Закрыть"></button>
         <ul class="main-nav__list">
-          <li class="main-nav__list-item main-nav__list-item--active"> <a href="index.html">ГЛАВНАЯ</a>
-          </li>
-          <li class="main-nav__list-item"> <a href="catalog.html">КАТАЛОГ ПРОДУКЦИИ</a> </li>
-          <li class="main-nav__list-item"> <a href="form.html">ПОДБОР ПРОГРАММЫ</a> </li>
+          <li class="main-nav__item"><a class="main-nav__link" href="index.html"> ГЛАВНАЯ </a></li>
+          <li class="main-nav__item"><a class="main-nav__link main-nav__link--current" href="catalog.html"> КАТАЛОГ ПРОДУКЦИИ </a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html"> ПОДБОР ПРОГРАММЫ </a></li>
         </ul>
-      </div>
     </nav>
   </header>
 
@@ -127,12 +120,9 @@
       <div class="page-footer__logo logo"> </div>
       <div class="page-footer__socials social">
         <ul class="social__list">
-          <li class="social__item"> <a class="social__link social__link--vk"
-              href="https://vk.com/htmlacademy">ВКОНТАКТЕ</a> </li>
-          <li class="social__item"> <a class="social__link social__link--inst"
-              href="https://www.instagram.com/htmlacademy">INSTAGRAM</a> </li>
-          <li class="social__item"> <a class="social__link social__link--fb"
-              href="https://www.facebook.com/htmlacademy"> FACEBOOK</a> </li>
+          <li class="social__item"> <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">ВКОНТАКТЕ</a> </li>
+          <li class="social__item"> <a class="social__link social__link--inst" href="https://www.instagram.com/htmlacademy">INSTAGRAM</a> </li>
+          <li class="social__item"> <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy"> FACEBOOK</a> </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">

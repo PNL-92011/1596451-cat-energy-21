@@ -1,83 +1,46 @@
-.page-main {
+.main {
   width: 320px;
   background-color: @basic-white;
+}
 
-  &__cat {
-    width: 320px;
-    margin: 0 auto;
-    padding: 0;
-    position: absolute;
-    /*попробовать другой формат для большей четкости картинки */
-  }
+.main__intro {
+  padding: 1px 20px;
+  background: url("../../img/index-background-desktop-2.jpg") no-repeat;
+  /*множественный фон - ??? */
+}
 
-  &__rect {
-    width: 320px;
-    height: 302px;
-    background-color: fade(@basic-green, 85%);
-    position: relative;
-  }
+.main__title {
+  font-family: @oswald;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: @basic-white;
+  text-align: center;
+  margin-bottom: 27px;
+  position: relative;
+}
 
-  &__container {
-    padding: 0 20px;
-  }
+.main__slogan {
+  font-family: @oswald;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: @basic-white;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+}
 
-  &__title {
-    font-family: @oswald;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 36px;
-    color: @basic-white;
-    text-align: center;
-    margin-top: -277px;
-    margin-bottom: 27px;
-    position: relative;
-    z-index: 3;
-  }
-
-  &__slogan {
-    font-family: @oswald;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 14px;
-    color: @basic-white;
-    text-transform: uppercase;
-    text-align: center;
-    position: relative;
-    z-index: 3;
-  }
-
-  &__can {
-    position: relative;
-    z-index: 3;
-    margin-top: 30px;
-  }
-
-
-  &__title-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 280px;
-    height: 40px;
-    background-color: @basic-green;
-  }
-
-  &__title-button:hover {
-    background-color: @basic-green-2;
-  }
-
-  &__title-button:active {
-    background-color: @basic-green-2;
-  }
-
-  &__programm {
-    text-decoration: none;
-    color: @basic-white;
-    font-size: 14px;
-    line-height: 18px;
-  }
-
-  &__programm:active {
-    color: fade(@basic-white, 30%);
-  }
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: @basic-white;
+  background-color: @basic-green;
+  font-size: 14px;
+  line-height: 18px;
 }

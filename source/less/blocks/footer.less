@@ -1,5 +1,5 @@
 .footer {
-  padding: 0 20px;
+  padding-top: 20px;
   background-color: @basic-grey;
   text-align: center;
 }
@@ -9,22 +9,25 @@
   margin-bottom: 32px;
 }
 
-.footer__social-list {
+.social {
   display: flex;
   justify-content: center;
   list-style: none;
   flex-wrap: wrap;
-  padding: 0;
+  padding-left: 20px;
 
   /*outline: 2px dashed green;
   outline-offset: -2px;*/
 }
 
-.footer__social-item {
-  margin: 0 12px;
+.social__item {
+  margin-right: 20px;
+
+  /*outline: 1px solid green;
+  outline-offset: -1px;*/
 }
 
-.footer__social-link {
+.social__link {
   display: flex;
   align-items: center;
   width: 30px;
@@ -32,23 +35,29 @@
   color: white;
   justify-content: center;
   text-align: center;
+
+  /*outline: 2px dashed red;
+  outline-offset: -2px;*/
 }
 
-.footer__social-icon {
+.social__icon {
   fill: @special-grey-2;
+
+  /*outline: 1px solid blue;
+  outline-offset: -1px;*/
 }
 
-.footer__social-path {
+.social__path {
   fill: none;
   stroke: @special-grey-2;
 }
 
-.footer__social-icon:hover,
-.footer__social-path:hover {
+.social__icon:hover,
+.social__path:hover {
   stroke: @basic-primary;
 }
 
-.footer__social-icon:active,
-.footer__social-path:active {
+.social__icon:active,
+.social__path:active {
   stroke: fade(@basic-primary, 30%);
 }

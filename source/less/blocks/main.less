@@ -4,12 +4,16 @@
 }
 
 .main__intro {
-  padding: 1px 20px;
-  background: url("../../img/index-background-desktop-2.jpg") no-repeat;
-  /*множественный фон - ??? */
+  padding-right: 20px;
+  padding-left: 20px;
+  background:
+    url("../img/index-can-mobile-1.png") no-repeat,
+    url("../img/index-background-desktop-2.jpg") no-repeat,
+    fade(@basic-primary, 85%) no-repeat ;
+
 }
 
-.main__title {
+.main__title--major {
   font-family: @oswald;
   font-weight: 400;
   font-size: 36px;
@@ -31,16 +35,3 @@
   position: relative;
 }
 
-.button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 280px;
-  height: 40px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: @basic-white;
-  background-color: @basic-primary;
-  font-size: 14px;
-  line-height: 18px;
-}

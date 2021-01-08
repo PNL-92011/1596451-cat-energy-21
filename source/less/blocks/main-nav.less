@@ -1,22 +1,22 @@
 .main-nav {
-  position: relative;
+
+  outline: 3px dashed blue;
+  outline-offset: -4px;
 }
 
 .main-nav__list {
   list-style: none;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0;
   padding-left: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-nav__item {
-  margin-top: 48px;
-  /*outline: 2px solid blue;*/
-}
-
-.main-nav__item:first-child {
   margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .main-nav__link {
@@ -49,8 +49,6 @@
   position: relative;
   top: 0;
   right: 0;
-  width: 25px;
-  height: 25px;
   /*background-color: transparent;
   border: 0;*/
   background-color: red;
@@ -74,6 +72,37 @@
 
 .main-nav__close::after {
   transform: rotate(-45deg);
+}
+
+// TABLET //
+@media(min-width:@tablet-width) {
+  .main-nav {
+    width: 57%;
+    margin-right: 30px;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 108px;
+    margin: 0;
+  }
+
+  .main-nav__close {
+    display: none;
+  }
+
+  .main-nav__link {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  .main-nav__item {
+    margin: 0;
+  }
 }
 
 //* Декоративные полоски *//

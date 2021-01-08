@@ -1,17 +1,37 @@
 .header {
-  min-width: 320px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 
-  /*outline: 2px solid red;
-  outline-offset: -2px;*/
+  outline: 2px solid red;
+  outline-offset: -2px;
 }
 
 .header__logo {
-  padding: 15px 20px;
+  height: 65px;
+  padding-left: 20px;
+  padding-right: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  /*outline: 2px solid green;*/
+  outline: 4px dashed green;
+  outline-offset: -4px;
+}
+
+// TABLET //
+@media(min-width:@tablet-width) {
+  .header {
+    height: 108px;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    width: 23%;
+    height: 108px;
+    padding: 0;
+    margin-left: 30px;
+  }
 }

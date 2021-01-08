@@ -1,3 +1,4 @@
+// Нужно ли стиль по тегу выносить в отдельный лесс-файл ? //
 button {
   border: none;
   margin: 0 auto;
@@ -23,4 +24,17 @@ button {
 .button--more {
   color: @special-dark-grey;
   background-color: @basic-grey;
+}
+
+// TABLET //
+@media(min-width:@tablet-width) {
+  .button {
+    width: 244px;
+    height: 54px;
+    font-size: 20px;
+    line-height: 20px;
+    position: absolute;
+    top: 370px;
+    left: 112px;
+  }
 }

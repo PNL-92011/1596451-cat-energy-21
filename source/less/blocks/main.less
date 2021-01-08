@@ -23,9 +23,9 @@
 
 .main__can {
   width: 280px;
+  height: 270px;
   margin-left: auto;
   margin-right: auto;
-  height: 270px;
   background: url("../img/index-can-mobile-1.png") no-repeat;
   margin-top: 50px;
 }
@@ -96,4 +96,49 @@
 
   /*outline: 1px solid rgb(182, 59, 165);
   outline-offset: -1px;*/
+}
+
+// TABLET //
+@media(min-width:@tablet-width) {
+  .main {
+
+    outline: 4px solid blue;
+    outline-offset: -4px;
+  }
+
+  .main__intro-major {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    background: none;
+  }
+
+  .main__title-major {
+    width: 450px;
+    font-size: 60px;
+    line-height: 60px;
+    color: @basic-black;
+    text-align: left;
+    margin-left: 90px;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+
+  .main__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    color: @basic-black;
+    text-align: left;
+    margin-left: 88px;
+    margin-top: 40px;
+  }
+
+  .main__can {
+    width: 709px;
+    height: 609px;
+    background: url("../img/index-can-tablet-1.png") no-repeat;
+    margin-top: 0;
+  }
 }

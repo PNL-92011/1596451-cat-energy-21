@@ -3,11 +3,35 @@
   background-color: @basic-grey;
   text-align: center;
 
-  /*outline: 2px solid green;
-  outline-offset: -2px;*/
+  /*outline: 5px solid violet;
+  outline-offset: -5px;*/
 }
 
 .footer__logo {
   margin-top: 39px;
   margin-bottom: 32px;
+
+  /*outline: 2px solid red;
+  outline-offset: -2px;*/
+}
+
+// TABLET //
+@media(min-width:@tablet-width) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 150px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 0;
+    align-items: center;
+  }
+
+  .footer__logo {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    /*outline: 2px solid green;
+    outline-offset: -2px;*/
+  }
 }

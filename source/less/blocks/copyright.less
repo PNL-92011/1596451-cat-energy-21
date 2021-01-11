@@ -40,3 +40,17 @@
 .copyright__svg:active {
   fill: fade(@basic-primary, 30%);
 }
+
+// TABLET //
+@media(min-width: @tablet-width) {
+  .copyright {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: end;
+  }
+
+  .copyright__link {
+    margin-right: 22px;
+  }
+}

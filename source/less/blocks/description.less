@@ -91,3 +91,62 @@
   left: 14px;
   top: 10px;
 }
+
+ // TABLET //
+@media(min-width:@tablet-width) {
+  .description {
+    width: 100%;
+
+    /*outline: 3px solid green;
+    outline-offset: -2px;*/
+  }
+
+  .description__title {
+    width: 375px;
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 42px;
+    margin-bottom: 32px;
+  }
+
+  .description__list {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 597px;
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-between;*/
+
+    /*outline: 2px solid skyblue;
+    outline-offset: -2px;*/
+  }
+
+  .description__item {
+    /*height: 280px;*/
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 37px;
+
+    /*outline: 2px solid orange;
+    outline-offset: -2px;*/
+  }
+
+  .description__item--leaf,
+  .description__item--tub,
+  .description__item--eat,
+  .description__item--alarm {
+    width: 250px;
+    padding-left: 0;
+    margin-right: 100px;
+    padding-top: 151px;
+    padding-bottom: 57px;
+  }
+
+  .description__item::before {
+    width: 80px;
+    height: 80px;
+    top: 40px;
+  }
+
+
+}

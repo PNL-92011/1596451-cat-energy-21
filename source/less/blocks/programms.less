@@ -12,8 +12,8 @@
   background-color: @basic-grey;
   position: relative;
 
-  /*outline: 3px dashed green;
-  outline-offset: -3px;*/
+  /*outline: 2px dashed green;
+  outline-offset: -2px;*/
 }
 
 .programms__title {
@@ -27,6 +27,9 @@
   color: @basic-black;
   padding-top: 25px;
   padding-left: 68px;
+
+  /*outline: 2px solid orange;
+  outline-offset: -2px;*/
 }
 
 .programms__title::before {
@@ -95,15 +98,16 @@
   top: 7px;
 }
 
-// TABLET ///////////////////////////////////
+// TABLET //
 @media(min-width:@tablet-width) {
   .programms {
     width: 100%;
+    margin-top: 82px;
     margin-left: 0;
     margin-right: 0;
 
-    /*outline: 3px dashed green;
-    outline-offset: -3px;*/
+    /*outline: 4px solid red;
+    outline-offset: -2px;*/
   }
 
   .programms__wrapper {
@@ -162,5 +166,62 @@
 
   .programms__link::after {
     left: 120px;
+  }
+}
+
+// DESKTOP //
+@media(min-width:@desktop-width) {
+  .programms {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .programms__wrapper {
+    width: 39.6%;
+    height: 374px;
+    margin-left: 110px;
+  }
+
+  .programms__wrapper:last-child {
+    margin-left: 0;
+    margin-right: 110px;
+  }
+
+  .programms__title {
+    padding-top: 0;
+    margin-top: 77px;
+    margin-left: 214px;
+  }
+
+  .programms__text {
+    width: 82%;
+    margin-top: 73px;
+  }
+
+  .programms__link {
+    margin-top: 27px;
+  }
+
+  .programms__title::before {
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 52px;
+  }
+
+  .programms__title--slim::after {
+    background-image: url("../img/cat-slim-desktop.svg");
+    width: 70px;
+    height: 97px;
+    top: 41px;
+    left: 67px;
+  }
+
+  .programms__title--pro::after {
+    background-image: url("../img/cat-pro-desktop.svg");
+    width: 134px;
+    height: 56px;
+    top: 67px;
+    left: 33px;
   }
 }

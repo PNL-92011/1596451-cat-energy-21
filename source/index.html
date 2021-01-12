@@ -13,7 +13,9 @@
   <header class="header">
     <div class="header__logo">
       <img class="header__logo-mobile" src="img/logo-icon-mobile.svg" width="34" height="38" alt="иконка кота">
-      <a class="header__logo-image"><img src="img/logo-cat-energy.svg" width="101" height="18" alt="Cat Energy"></a>
+      <a class="header__logo-cat-energy"><img src="img/logo-cat-energy.svg" width="101" height="18" alt="Cat Energy"></a>
+      <a class="header__logo-tablet"><img src="img/logo-tablet.svg" width="174" height="52" alt="Cat Energy"></a>
+      <a class="header__logo-desktop"><img src="img/logo-desktop.svg" width="202" height="59" alt="Cat Energy"></a>
     </div>
     <nav class="main-nav">
       <button class="main-nav__close" type="button"><span class="visually-hidden">Закрыть</span></button>
@@ -27,10 +29,12 @@
 
   <main class="main">
     <div class="main__intro-major">
-      <h1 class="main__title-major">Функциональное питание для котов</h1>
-      <p class="main__slogan">Занялся собой? Займись котом!</p>
-      <div class="main__can"></div>
-      <a class="button" href="form.html">подобрать программу</a>
+      <div class="main__intro-heading">
+        <h1 class="main__title-major">Функциональное питание для котов</h1>
+        <p class="main__slogan">Занялся собой? Займись котом!</p>
+        <div class="main__can"></div>
+        <a class="button" href="form.html">подобрать программу</a>
+      </div>
       <section class="programms">
         <h2 class="visually-hidden">Варианты кото-диет</h2>
         <div class="programms__wrapper">
@@ -55,40 +59,48 @@
       </section>
     </div>
     <section class="example">
-      <h2 class="example__title">Живой пример</h2>
-      <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-      <div class="example__wrap-stats">
-        <div class="example__stats">
-          <dl class="example__stats-list">
-            <dt class="example__stats-number">5 кг</dt>
-            <dd class="example__stats-entry">снижение веса</dd>
-          </dl>
-          <dl class="example__stats-list">
-            <dt class="example__stats-number">60 дней</dt>
-            <dd class="example__stats-entry">затрачено времени</dd>
-          </dl>
+      <div class="example__left">
+        <h2 class="example__title">Живой пример</h2>
+        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <div class="example__wrap-stats">
+          <div class="example__stats">
+            <dl class="example__stats-list">
+              <dt class="example__stats-number">5 кг</dt>
+              <dd class="example__stats-entry">снижение веса</dd>
+            </dl>
+            <dl class="example__stats-list">
+              <dt class="example__stats-number">60 дней</dt>
+              <dd class="example__stats-entry">затрачено времени</dd>
+            </dl>
+          </div>
+          <div class="example__costs-wrap">
+            <span class="example__costs example__costs--full">Затраты на питание: 15 000 РУБ.</span>
+            <span class="example__costs example__costs--left-part">Затраты на питание:</span>
+            <span class="example__costs example__costs--right-part">15 000 РУБ.</span>
+          </div>
         </div>
-        <h3 class="example__costs">Затраты на питание: 15 000 РУБ.</h3>
       </div>
-      <div class="example__cat-before"><img src="img/cat-before-mobile-1.png" width=311 height=232 alt="фото жирного кота"></div>
-      <div class="example__cat-halfs">
-        <img src="img/cat-half-before-tablet.png" width=354 height=620 alt="фото половины жирного кота">
-        <img src="img/cat-half-after-tablet.png" width=354 height=607 alt="фото половины худого кота">
-      </div>
+      <div class="example__rigth">
+        <div class="example__cat-before"><img src="img/cat-before-mobile-1.png" width=311 height=232 alt="фото жирного кота"></div>
+        <div class="example__cat-halfs">
+          <img class="example__fat-half" src="img/cat-half-before-tablet.png" width=354 height=620 alt="фото половины жирного кота">
+          <img class="example__thin-half" src="img/cat-half-after-tablet.png" width=354 height=607 alt="фото половины худого кота">
+        </div>
 
-      <div class="example__slider slider">
-        <!-- <ul class="vary__list">
+        <div class="example__slider slider">
+          <!-- <ul class="vary__list">
             <li class="vary__item vary__item--before slider__item">жирный кот</li>
             <li class="vary__item vary__item--after  slider__item">худой кот</li>
                 </ul> -->
-        <div class="slider__toggles">
-          <button class="slider__switcher slider__switcher--current" type="button">было</button>
-          <div class="slider__container">
-            <div class="slider__plank">
-              <div class="slider__plank-core"></div>
+          <div class="slider__toggles">
+            <button class="slider__switcher slider__switcher--current" type="button">было</button>
+            <div class="slider__container">
+              <div class="slider__plank">
+                <div class="slider__plank-core"></div>
+              </div>
             </div>
+            <button class="slider__switcher" type="button">стало</button>
           </div>
-          <button class="slider__switcher" type="button">стало</button>
         </div>
       </div>
     </section>

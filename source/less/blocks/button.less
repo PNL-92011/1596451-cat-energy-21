@@ -1,7 +1,7 @@
 // Нужно ли стиль по тегу выносить в отдельный лесс-файл ? //
 button {
   border: none;
-  margin: 0 auto;
+  margin: 0;
 }
 
 @media(min-width:@mobile-width) {
@@ -38,5 +38,18 @@ button {
     position: absolute;
     top: 370px;
     left: 14.5%;
+  }
+}
+
+// DESKTOP //
+@media(min-width:@desktop-width) {
+  .button {
+    width: 244px;
+    height: 54px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: -40px;
+    margin-left: -1.4%;
+    margin-right: 0;
   }
 }

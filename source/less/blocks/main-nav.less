@@ -1,8 +1,10 @@
-/*.main-nav {
+.main-nav {
+  margin-left: 20px;
+  margin-right: 20px;
 
-  outline: 3px dashed blue;
-  outline-offset: -4px;
-}*/
+  /*outline: 4px dashed blue;
+  outline-offset: -4px;*/
+}
 
 .main-nav__list {
   list-style: none;
@@ -104,6 +106,32 @@
     margin: 0;
   }
 }
+
+// DESKTOP //
+@media(min-width:@desktop-width) {
+  .main-nav {
+    width: 50%;
+    margin-left: 0;
+    margin-right: 110px;
+    /*padding-left: 130px;*/
+    justify-content: end;
+  }
+
+  .main-nav__item:first-child {
+    margin-left: 130px;
+  }
+
+  .main-nav__link {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: @basic-white;
+  }
+}
+
+
+
+
 
 //* Декоративные полоски *//
 /*.main-nav__link::before {

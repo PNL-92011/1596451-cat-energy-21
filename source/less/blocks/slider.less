@@ -52,9 +52,12 @@
 // TABLET //
 @media(min-width:@tablet-width) {
   .slider {
-    width: 575px;
+    width: 570px;
     margin-left: auto;
     margin-right: auto;
+
+    outline: 3px solid red;
+    outline-offset: -3px;
   }
 
   .slider__toggles {
@@ -104,5 +107,17 @@
     height: 8px;
     position: absolute;
     left: 7px;
+  }
+}
+
+
+// DESKTOP //
+@media(min-width:@desktop-width) {
+  .slider {
+    // 110+554+708=1372+68=1440; 110-68=42px //
+    margin-right: 42px;
+    position: absolute;
+    top: 570px;
+    left: 725px;
   }
 }

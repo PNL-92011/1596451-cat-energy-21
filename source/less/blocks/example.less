@@ -1,39 +1,47 @@
 .example {
-  min-width: 280px;
+  min-width: 320px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 15px;
   padding-bottom: 35px;
-  padding-left: 20px;
-  padding-right: 20px;
   background-color: @bg-example;
+
+  /*outline: 4px solid violet;
+  outline-offset: -4px;*/
 }
 
 .example__title {
+  width: 80%;
   font-family: @oswald;
   font-weight: normal;
   font-size: 36px;
   line-height: 40px;
   color: @basic-black;
   margin-top: 25px;
-
-  /*outline: 4px solid orange;*/
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .example__text {
-  width: 280px;
+  width: 80%;
   font-family: @arial;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: @special-dark-grey;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.example__wrap-stats {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .example__stats {
+  margin-bottom: 35px;
   display: flex;
   justify-content: space-between;
-
-  /*outline: 3px solid red;*/
 }
 
 .example__stats-list {
@@ -46,11 +54,12 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  /*outline: 4px solid green;*/
 }
 
 .example__stats-number {
   font-family: @oswald;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   color: @basic-black;
@@ -58,17 +67,26 @@
 }
 
 .example__stats-entry {
-  width: 75px;
   color: @special-dark-grey;
   font-family: @arial;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 12px;
   line-height: 12px;
   background-color: @bg-example;
-  position: absolute;
   text-align: center;
-  top: 45px;
-  left: -15px;
+  top: 47px;
+}
+
+.example__stats-entry--weight {
+  width: 85px;
+  left: -20px;
+  position: absolute;
+}
+
+.example__stats-entry--time {
+  width: 85px;
+  left: -20px;
+  position: absolute;
 }
 
 .example__costs--full {
@@ -76,8 +94,9 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
-  text-align: center;
   text-transform: uppercase;
+  display: block;
+  text-align: center;
 
   /*outline: 3px solid red;*/
 }
@@ -102,22 +121,35 @@
 @media(min-width:@tablet-width) {
   .example {
     background-color: @basic-white;
-    padding-left: 30px;
-    padding-right: 30px;
     background: linear-gradient(to bottom, @basic-white 0, @basic-white 619px, @bg-example 619px, @bg-example 100%);
-    position: relative;
-
-    /*outline: 5px solid violet;
-    outline-offset: -5px;*/
   }
 
-  .example__stats-entry {
-    background-color: @basic-white;
+  .example__title {
+    width: 86%;
+    margin-left: 30px;
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+
+  .example__text {
+    width: 86%;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    /* outline: 3px solid blue;*/
   }
 
   .example__wrap-stats {
+    margin-left: 30px;
+    margin-right: 30px;
     display: flex;
     justify-content: space-between;
+  }
+
+  .example__stats {
+    justify-content: start;
   }
 
   .example__stats-list {
@@ -126,6 +158,8 @@
     margin-top: 0;
     margin-bottom: 0;
     margin-right: 42px;
+
+    position: relative;
   }
 
   .example__stats-number {
@@ -134,11 +168,20 @@
   }
 
   .example__stats-entry {
-    width: 135px;
     font-size: 14px;
     line-height: 14px;
-    left: -27px;
-    top: 60px;
+    background-color: @basic-white;
+    top: 63px;
+  }
+
+  .example__stats-entry--weight {
+    width: 110px;
+    left: -14px;
+  }
+
+  .example__stats-entry--time {
+    width: 140px;
+    left: -28px;
   }
 
   .example__costs--full {
@@ -161,30 +204,14 @@
   .example__cat-halfs {
     display: flex;
     justify-content: center;
-    padding-right: 60px;
-
     /*outline: 5px dashed green;
     outline-offset: -5px;*/
-  }
-
-  .example__thin-cat {
-    margin-left: 0;
-  }
-
-
-  .example__text {
-    display: block;
-    width: 702px;
-    font-size: 16px;
-    line-height: 24px;
-   /* outline: 3px solid blue;*/
   }
 
   .example__fat-half-desktop,
   .example__thin-half-desktop {
     display: none;
   }
-
 }
 
 // DESKTOP //
@@ -198,7 +225,6 @@
   .example__left {
     width: 45%;
     margin-left: 110px;
-
     /*outline: 3px solid blue;
     outline-offset: -3px;*/
   }
@@ -272,6 +298,4 @@
   .example__thin-half-desktop {
     margin-left: -40px;
   }
-
-
 }

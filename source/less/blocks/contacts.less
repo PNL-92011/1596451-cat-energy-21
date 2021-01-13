@@ -1,35 +1,42 @@
+.contacts {
+  width: 100%;
+}
+
 .contacts__info {
   display: flex;
-  padding-left: 20px;
-  justify-content: space-around;
 }
 
 /* Как без <br> сделать правильное расположение слов по строкам? */
 .contacts__inviting {
+  width: 43.8%;
   font-family: @oswald;
   font-weight: 400;
   color: @invite;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  margin-right: 17px;
-  /* outline: 1px solid blue;*/
+  margin-left: 19px;
+
+  /*outline: 2px solid green;
+  outline-offset: -2px;*/
 }
 
 .contacts__address {
+  width: 43.8%;
   font-family: @arial;
   font-size: 14px;
   line-height: 20px;
   color: @special-dark-grey;
   text-transform: none;
+  margin-right: 19px;
+
+  /*outline: 4px solid orange;
+  outline-offset: -4px;*/
 }
 
 .contacts__address--street,
 .contacts__address--town {
   display: none;
-
-  /*outline: 2px solid blue;
-  outline-offset: -2px;*/
 }
 
 .contacts__map {
@@ -40,20 +47,11 @@
 
 // TABLET //
 @media(min-width:@tablet-width) {
-  /*.contacts {
-    outline: 6px dashed green;
-    outline-offset: -6px;
-  }*/
-
   .contacts__info {
     height: 201px;
+    margin-left: 0;
     align-items: center;
-    padding-left: 71px;
-    padding-right: 72px;
     justify-content: space-between;
-
-    /*outline: 2px solid red;
-    outline-offset: -2px;*/
   }
 
   .contacts__inviting {
@@ -61,24 +59,57 @@
     font-size: 20px;
     line-height: 23px;
     font-weight: 400;
+    margin-left: 71px;
+    margin-right: 0;
   }
 
   .contacts__address--full {
     display: none;
   }
 
+  .contacts__address-parts {
+    width: 159px;
+    text-align: end;
+    margin-right: 72px;
+  }
+
   .contacts__address--street,
   .contacts__address--town {
+    width: 100%;
     display: block;
-    width: 159px;
     font-size: 16px;
-    text-align: end;
-
-    /*outline: 2px solid blue;
-    outline-offset: -2px;*/
   }
 
   .contacts__map {
     height: 400px;
+  }
+}
+
+// DESCTOP //
+@media(min-width:@desktop-width) {
+  .contacts {
+    position: relative;
+  }
+
+  .contacts__info {
+    width: 40%;
+    height: 201px;
+    background-color: @basic-white;
+    padding-left: 0;
+    padding-right: 0;
+    position: absolute;
+    top: 95px;
+    left: 110px;
+  }
+
+  .contacts__inviting {
+    width: 163px;
+    margin-left: 76px;
+  }
+
+  .contacts__address-parts {
+    width: 159px;
+    text-align: start;
+    margin-right: 89px;
   }
 }

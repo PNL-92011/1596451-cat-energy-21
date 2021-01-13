@@ -1,13 +1,15 @@
   .header {
-    width: 100%;
+    min-width: 320px;
     margin-left: auto;
     margin-right: auto;
+    background-color: @basic-white;
 
-    outline: 2px solid red;
-    outline-offset: -2px;
+    /*outline: 2px solid red;
+    outline-offset: -2px;*/
   }
 
   .header__logo {
+    width: 87.5%;
     height: 65px;
     margin-left: 20px;
     margin-right: 20px;
@@ -28,6 +30,7 @@
   // TABLET //
   @media(min-width:@tablet-width) {
     .header {
+      width: 100%;
       height: 108px;
       display: flex;
       justify-content: space-between;
@@ -36,7 +39,6 @@
     .header__logo {
       width: 23%;
       height: 108px;
-      padding: 0;
       margin-left: 30px;
     }
 

@@ -1,0 +1,119 @@
+.slider__toggles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: 0;
+  margin-right: 0;
+
+  /*outline: 2px solid blue;*/
+}
+
+.slider__switcher {
+  font-family: @oswald;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: @basic-black;
+  border: none;
+  outline: none;
+  background-color: @bg-example;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+
+.slider__plank {
+  display: flex;
+  align-items: center;
+  width: 84px;
+  height: 14px;
+  background-color: @basic-white;
+  border: 1px solid @special-grey;
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin-left: 12px;
+  margin-right: 13px;
+}
+
+.slider__plank-core {
+  width: 35px;
+  height: 6px;
+  background-color: @basic-primary;
+  border: none;
+  border-radius: 6px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+
+// TABLET //
+@media (min-width: @tablet-width) {
+  .slider {
+    width: 570px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .slider__toggles {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .slider__switcher {
+    font-size: 20px;
+    line-height: 30px;
+    color: @basic-black;
+    background-color: @bg-example;
+
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-style: dotted;
+    text-decoration-color: fade(@basic-black, 24%);
+  }
+
+  .slider__container {
+    width: 428px;
+    height: 6px;
+    background-color: @slider;
+    /*order: none;*/
+    border-radius: 6px;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .slider__plank {
+    width: 34px;
+    height: 34px;
+    background-color: @basic-white;
+    border: 1px solid @special-grey;
+    border-radius: 50%;
+    justify-content: center;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+  }
+
+  .slider__plank-core {
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    left: 7px;
+  }
+}
+
+// DESKTOP //
+@media (min-width: @desktop-width) {
+  .slider {
+    margin-right: 42px;
+  }
+
+  .slider__switcher {
+    background-color: @basic-grey;
+  }
+}

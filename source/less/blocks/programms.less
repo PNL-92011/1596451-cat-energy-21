@@ -1,25 +1,33 @@
 .programms {
+  width: 280px;
   margin-top: 22px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: @oswald;
+  background-color: @basic-white;
 }
 
 .programms__wrapper {
-  background-color: @basic-grey;
   padding-left: 20px;
   padding-bottom: 15px;
+  background-color: @basic-grey;
+  position: relative;
 }
 
 .programms__title {
-  padding-top: 25px;
   font-size: 24px;
   line-height: 37px;
   font-family: @oswald;
   font-weight: normal;
+  display: block;
   text-align: left;
   text-transform: uppercase;
   color: @basic-black;
-  display: block;
+  padding-top: 25px;
   padding-left: 68px;
-  position: relative;
+
+  /*outline: 2px solid orange;
+  outline-offset: -2px;*/
 }
 
 .programms__title::before {
@@ -30,61 +38,188 @@
   height: 50px;
   border-radius: 100%;
   position: absolute;
-  top: 20px;
-  left: 0;
+  top: 22px;
+  left: 24px;
 }
 
 .programms__text {
   font-size: 14px;
   line-height: 18px;
   font-family: @arial;
-  margin-right: 33px;
   color: @special-dark-grey;
+  margin-right: 33px;
 }
 
-.programms__link-catalog {
+.programms__link {
   text-decoration: none;
   color: @basic-black;
   font-size: 16px;
   line-height: 16px;
   position: relative;
-  /*margin-bottom: 15px;*/
 }
 
 .programms__title--slim::after {
   content: " ";
   display: block;
-  background-image: url("../../img/cat-slim.svg");
+  background-image: url("../img/cat-slim.svg");
   width: 36px;
   height: 50px;
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  top: 17px;
-  left: 8px;
+  top: 18px;
+  left: 30px;
 }
 
 .programms__title--pro::after {
   content: " ";
   display: block;
-  background-image: url("../../img/cat-pro.svg");
+  background-image: url("../img/cat-pro.svg");
   width: 67px;
   height: 28px;
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
   top: 30px;
-  left: -9px;
+  left: 11px;
 }
 
-.programms__link-catalog::after {
+.programms__link::after {
   content: " ";
   display: block;
   position: absolute;
-  background-image: url("../../img/icon-arrow.svg");
+  background-image: url("../img/icon-arrow.svg");
   width: 50px;
   height: 12px;
   background-repeat: no-repeat;
   left: 100px;
   top: 7px;
+}
+
+// TABLET //
+@media (min-width: @tablet-width) {
+  .programms {
+    width: 100%;
+    margin-top: 82px;
+    margin-left: 0;
+    margin-right: 0;
+
+    /*outline: 4px solid red;
+    outline-offset: -2px;*/
+  }
+
+  .programms__wrapper {
+    height: 372px;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .programms__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding-top: 77px;
+    padding-left: 0;
+    margin-left: 52px;
+  }
+
+  .programms__text {
+    width: 49%;
+    height: 96px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 52px;
+  }
+
+  .programms__title--slim::after {
+    background-image: url("../img/cat-slim-tablet.svg");
+    width: 140px;
+    height: 192px;
+    top: 79px;
+    left: 65%;
+  }
+
+  .programms__title--pro::after {
+    background-image: url("../img/cat-pro-tablet.svg");
+    width: 268px;
+    height: 112px;
+    top: 135px;
+    left: 56%;
+  }
+
+  .programms__title::before {
+    width: 200px;
+    height: 200px;
+    top: 92px;
+    left: 61%;
+  }
+
+  .programms__link {
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-top: 52px;
+    margin-left: 52px;
+  }
+
+  .programms__link::after {
+    left: 120px;
+  }
+}
+
+// DESKTOP //
+@media (min-width: @desktop-width) {
+  .programms {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .programms__wrapper {
+    width: 39.6%;
+    height: 374px;
+    margin-left: 110px;
+  }
+
+  .programms__wrapper:last-child {
+    margin-left: 0;
+    margin-right: 110px;
+  }
+
+  .programms__title {
+    padding-top: 0;
+    margin-top: 77px;
+    margin-left: 214px;
+  }
+
+  .programms__text {
+    width: 82%;
+    margin-top: 73px;
+  }
+
+  .programms__link {
+    margin-top: 27px;
+  }
+
+  .programms__title::before {
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 52px;
+  }
+
+  .programms__title--slim::after {
+    background-image: url("../img/cat-slim-desktop.svg");
+    width: 70px;
+    height: 97px;
+    top: 41px;
+    left: 67px;
+  }
+
+  .programms__title--pro::after {
+    background-image: url("../img/cat-pro-desktop.svg");
+    width: 134px;
+    height: 56px;
+    top: 67px;
+    left: 33px;
+  }
 }

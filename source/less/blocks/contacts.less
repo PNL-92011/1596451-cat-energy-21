@@ -1,37 +1,115 @@
 .contacts {
-  padding: 1px;
+  width: 100%;
 }
 
 .contacts__info {
   display: flex;
-  padding-left: 20px;
-  justify-content: space-between;
 }
 
-.inviting {
+/* Как без <br> сделать правильное расположение слов по строкам? */
+.contacts__inviting {
+  width: 43.8%;
   font-family: @oswald;
+  font-weight: 400;
   color: @invite;
   font-size: 16px;
   line-height: 18px;
-  margin: 12px 0;
-}
-
-.inviting__bid {
   text-transform: uppercase;
-}
-/* Как без <br> сделать правильное расположение слов по строкам? */
+  margin-left: 19px;
 
-.inviting__address {
+  /*outline: 2px solid green;
+  outline-offset: -2px;*/
+}
+
+.contacts__address {
+  width: 43.8%;
   font-family: @arial;
-  color: @special-dark-grey;
   font-size: 14px;
   line-height: 20px;
-  margin: 15px 0;
+  color: @special-dark-grey;
+  text-transform: none;
+  margin-right: 19px;
+
+  /*outline: 4px solid orange;
+  outline-offset: -4px;*/
+}
+
+.contacts__address--street,
+.contacts__address--town {
+  display: none;
 }
 
 .contacts__map {
-  width: 320px;
-  height: 362px;
+  width: 100%;
   display: block;
   border: none;
+}
+
+// TABLET //
+@media (min-width: @tablet-width) {
+  .contacts__info {
+    height: 201px;
+    margin-left: 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .contacts__inviting {
+    width: 171px;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 400;
+    margin-left: 71px;
+    margin-right: 0;
+  }
+
+  .contacts__address--full {
+    display: none;
+  }
+
+  .contacts__address-parts {
+    width: 159px;
+    text-align: end;
+    margin-right: 72px;
+  }
+
+  .contacts__address--street,
+  .contacts__address--town {
+    width: 100%;
+    display: block;
+    font-size: 16px;
+  }
+
+  .contacts__map {
+    height: 400px;
+  }
+}
+
+// DESCTOP //
+@media (min-width: @desktop-width) {
+  .contacts {
+    position: relative;
+  }
+
+  .contacts__info {
+    width: 40%;
+    height: 201px;
+    background-color: @basic-white;
+    padding-left: 0;
+    padding-right: 0;
+    position: absolute;
+    top: 95px;
+    left: 110px;
+  }
+
+  .contacts__inviting {
+    width: 163px;
+    margin-left: 76px;
+  }
+
+  .contacts__address-parts {
+    width: 159px;
+    text-align: start;
+    margin-right: 89px;
+  }
 }

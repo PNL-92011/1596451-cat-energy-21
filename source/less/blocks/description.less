@@ -1,15 +1,25 @@
+.description {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+
+  /*outline: 4px solid skyblue;
+  outline-offset: -4px;*/
+}
+
 .description__title {
   font-size: 36px;
   line-height: 40px;
   font-family: @oswald;
   font-weight: 400;
-  margin: 25px 0;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .description__list {
   list-style: none;
   margin-top: 10px;
-  padding: 0;
+  padding-left: 0;
 }
 
 .description__item {
@@ -80,4 +90,120 @@
   background-repeat: no-repeat;
   left: 14px;
   top: 10px;
+}
+
+// TABLET //
+@media (min-width: @tablet-width) {
+  .description {
+    width: 100%;
+
+    /*outline: 3px solid green;
+    outline-offset: -2px;*/
+  }
+
+  .description__title {
+    width: 375px;
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 42px;
+    margin-bottom: 32px;
+  }
+
+  .description__list {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 597px;
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-between;*/
+
+    /*outline: 2px solid skyblue;
+    outline-offset: -2px;*/
+  }
+
+  .description__item {
+    /*height: 280px;*/
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 37px;
+    width: 250px;
+    padding-left: 0;
+    margin-right: 100px;
+    padding-top: 151px;
+    padding-bottom: 57px;
+
+    /*outline: 2px solid orange;
+    outline-offset: -2px;*/
+  }
+
+  /*.description__item--leaf,
+  .description__item--tub,
+  .description__item--eat,
+  .description__item--alarm {
+    width: 250px;
+    padding-left: 0;
+    margin-right: 100px;
+    padding-top: 151px;
+    padding-bottom: 57px;
+  }*/
+
+  .description__item::before {
+    width: 80px;
+    height: 80px;
+    top: 40px;
+  }
+}
+
+// DESKTOP //
+@media (min-width: @desktop-width) {
+  .description {
+    height: 385px;
+  }
+
+  .description__title {
+    margin-top: 71px;
+    margin-bottom: 72px;
+    margin-left: 110px;
+    line-height: 60px;
+
+    /*outline: 2px solid orange;
+    outline-offset: -2px;*/
+  }
+
+  .description__list {
+    height: 227px;
+
+    /*outline: 5px dotted green;
+    outline-offset: -5px;*/
+  }
+
+  .description__item {
+    width: 17%;
+    margin-top: 110px;
+    margin-right: 80px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    /*outline: 5px solid red;
+    outline-offset: -5px;*/
+  }
+
+  .description__item--leaf {
+    margin-left: 110px;
+  }
+
+  .description__item--alarm {
+    margin-right: 110px;
+  }
+
+  .description__item::before {
+    top: -110px;
+  }
+
+  .description__item--leaf::after,
+  .description__item--tub::after,
+  .description__item--eat::after,
+  .description__item--alarm::after {
+    display: none;
+  }
 }

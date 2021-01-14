@@ -1,3 +1,4 @@
+// Index.html //
 .main {
   min-width: 320px;
   margin-left: 0;
@@ -9,25 +10,12 @@
   outline-offset: -2px;*/
 }
 
-// Index.html //
 .main__intro-major {
   padding-top: 20px;
   background: linear-gradient(to bottom, fade(@basic-primary, 85%) 0, fade(@basic-primary, 85%) 302px, @basic-white 302px, @basic-white 100%), url("../img/cat-background-mobile.jpg") no-repeat 50% 0;
 
   /*outline: 5px dashed pink;
   outline-offset: -5px;*/
-}
-
-.main__can {
-  width: 280px;
-  height: 270px;
-  margin-left: auto;
-  margin-right: auto;
-  background: url("../img/can-mobile.png") no-repeat;
-  margin-top: 50px;
-
-  /*outline: 2px solid blue;
-  outline-offset: -2px;*/
 }
 
 .main__title-major {
@@ -55,13 +43,23 @@
   position: relative;
 }
 
-// Form.html //
-.main__intro {
+.main__can {
   width: 280px;
+  height: 270px;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 20px;
-  padding-left: 20px;
+  background: url("../img/can-mobile.png") no-repeat;
+  margin-top: 50px;
+
+  /*outline: 2px solid blue;
+  outline-offset: -2px;*/
+}
+
+// Form.html //
+.main__intro {
+  width: 630px;
+  margin-left: 20px;
+  margin-right: 20px;
 
   /*outline: 4px dashed rgb(182, 59, 165);
   outline-offset: -4px;*/
@@ -74,8 +72,8 @@
   line-height: 36px;
   color: @basic-black;
   text-align: left;
-  margin-bottom: 27px;
   text-decoration: none;
+  margin-bottom: 27px;
 }
 
 .main__text {
@@ -85,8 +83,35 @@
   line-height: 18px;
   color: @basic-black;
   text-transform: uppercase;
+  width: 270px;
   text-align: left;
-  padding-right: 74px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+// TABLET //
+@media (min-width: @tablet-width) {
+  .main__title {
+    width: 660px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    margin-right: auto;
+    margin-left: 71px;
+  }
+
+  .main__text {
+    font-size: 20px;
+    line-height: 30px;
+    color: @basic-black;
+    text-transform: uppercase;
+    width: 390px;
+    text-align: left;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-right: auto;
+    margin-left: 71px;
+  }
 }
 
 // Catalog.html //

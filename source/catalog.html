@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,14 +13,16 @@
   <header class="header">
     <div class="header__logo">
       <img class="header__logo-mobile" src="img/logo-icon-mobile.svg" width="34" height="38" alt="иконка кота">
-      <a class="header__logo-image"><img src="img/logo-cat-energy.svg" width="101" height="18" alt="Cat Energy"></a>
+      <a class="header__logo-cat-energy"><img src="img/logo-cat-energy.svg" width="101" height="18" alt="Cat Energy"></a>
+      <a class="header__logo-tablet"><img src="img/logo-tablet.svg" width="174" height="52" alt="Cat Energy"></a>
+      <a class="header__logo-desktop"><img src="img/logo-desktop.svg" width="202" height="59" alt="Cat Energy"></a>
     </div>
     <nav class="main-nav">
-      <button class="main-nav__close" type="button" aria-label="Закрыть"></button>
+      <button class="main-nav__close" type="button"><span class="visually-hidden">Закрыть</span></button>
       <ul class="main-nav__list">
         <li class="main-nav__item"><a class="main-nav__link" href="index.html">главная</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">каталог продукции</a></li>
-        <li class="main-nav__item"><a class="main-nav__link main-nav__link--current" href="form.html">подбор программы</a></li>
+        <li class="main-nav__item"><a class="main-nav__link main-nav__link--current" href="catalog.html">каталог продукции</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="form.html">подбор программы</a></li>
       </ul>
     </nav>
   </header>
@@ -29,7 +32,7 @@
       <h1 class="main__title">Каталог продукции</h1>
       <!----------------------------------------     1  PRO 500 КУРИЦА     ---------------------------------------->
       <article class="catalog__item">
-        <div class="catalog__content">
+        <div class="catalog__wrapper">
           <a class="catalog__vary-image" href="#"><img src="img/catalog-1.png" width="68" height="86" alt="фото товара"></a>
           <div class="catalog__container">
             <h3 class="catalog__heading"><a class="catalog__vary-name" href="#">cat energy pro 500 г</a></h3>
@@ -49,11 +52,11 @@
             </table>
           </div>
         </div>
-        <a class="button" href="#">заказать</a>
+        <a class="button button-catalog" href="#">заказать</a>
       </article>
       <!----------------------------------------     2  PRO 1000 КУРИЦА     ---------------------------------------->
       <article class="catalog__item">
-        <div class="catalog__content">
+        <div class="catalog__wrapper">
           <a class="catalog__vary-image" href="#"><img src="img/catalog-2.jpg" width="84" height="100" alt="фото товара"></a>
           <div class="catalog__container">
             <h3 class="catalog__heading"><a class="catalog__vary-name" href="#">cat energy pro 1000 Г</a></h3>
@@ -73,11 +76,11 @@
             </table>
           </div>
         </div>
-        <a class="button" href="#">заказать</a>
+        <a class="button button-catalog" href="#">заказать</a>
       </article>
       <!----------------------------------------     3  PRO 500 РЫБА     ---------------------------------------->
       <article class="catalog__item">
-        <div class="catalog__content">
+        <div class="catalog__wrapper">
           <a class="catalog__vary-image" href="#"><img src="img/catalog-3.jpg" width="68" height="78" alt="фото товара"></a>
           <div class="catalog__container">
             <h3 class="catalog__heading"><a class="catalog__vary-name" href="#">cat energy pro 500 г</a></h3>
@@ -97,11 +100,11 @@
             </table>
           </div>
         </div>
-        <a class="button" href="#">заказать</a>
+        <a class="button button-catalog" href="#">заказать</a>
       </article>
       <!----------------------------------------     4  PRO 1000 РЫБА     ---------------------------------------->
       <article class="catalog__item">
-        <div class="catalog__content">
+        <div class="catalog__wrapper">
           <a class="catalog__vary-image" href="#"><img src="img/catalog-4.jpg" width="84" height="100" alt="фото товара"></a>
           <div class="catalog__container">
             <h3 class="catalog__heading"><a class="catalog__vary-name" href="#">cat energy pro 1000 Г</a></h3>
@@ -121,11 +124,11 @@
             </table>
           </div>
         </div>
-        <a class="button" href="#">заказать</a>
+        <a class="button button-catalog" href="#">заказать</a>
       </article>
       <!----------------------------------------     5  SLIM 500 ГРЕЧКА     ---------------------------------------->
       <article class="catalog__item">
-        <div class="catalog__content">
+        <div class="catalog__wrapper">
           <a class="catalog__vary-image" href="#"><img src="img/catalog-5.jpg" width="68" height="78" alt="фото товара"></a>
           <div class="catalog__container">
             <h3 class="catalog__heading"><a class="catalog__vary-name" href="#">cat energy slim 500 Г</a></h3>
@@ -145,11 +148,11 @@
             </table>
           </div>
         </div>
-        <a class="button" href="#">заказать</a>
+        <a class="button button-catalog" href="#">заказать</a>
       </article>
       <!----------------------------------------     6  SLIM 1000 ГРЕЧКА     ---------------------------------------->
       <article class="catalog__item">
-        <div class="catalog__content">
+        <div class="catalog__wrapper">
           <a class="catalog__vary-image" href="#"><img src="img/catalog-6.jpg" width="84" height="100" alt="фото товара"></a>
           <div class="catalog__container">
             <h3 class="catalog__heading"><a class="catalog__vary-name" href="#">cat energy slim 1000 Г</a></h3>
@@ -169,11 +172,11 @@
             </table>
           </div>
         </div>
-        <a class="button" href="#">заказать</a>
+        <a class="button button-catalog" href="#">заказать</a>
       </article>
       <!----------------------------------------     7  SLIM 500 РИС     ---------------------------------------->
       <article class="catalog__item">
-        <div class="catalog__content">
+        <div class="catalog__wrapper">
           <a class="catalog__vary-image" href="#"><img src="img/catalog-7.jpg" width="72" height="84" alt="фото товара"></a>
           <div class="catalog__container">
             <h3 class="catalog__heading"><a class="catalog__vary-name" href="#">cat energy slim 500 Г</a></h3>
@@ -193,17 +196,20 @@
             </table>
           </div>
         </div>
-        <a class="button" href="#">заказать</a>
+        <a class="button button-catalog" href="#">заказать</a>
       </article>
       <!----------------------------------------     ПОКАЗАТЬ ЕЩЕ     ---------------------------------------->
       <article class="catalog__item more">
-        <!-- <div class="catalog__icon-plus">" + "</div> -->
-        <h3 class="catalog__heading">показать еще 100500 товаров</h3>
-        <small class="catalog__text-smal">На самом деле вкусов гораздо больше!</small>
-        <a class="button button--more" href="#">показать все</a>
+        <div class="more__wrapper">
+          <h3 class="catalog__heading  more__heading">показать еще 100500&nbspтоваров</h3>
+          <small class="more__text-small">На самом деле вкусов гораздо больше!</small>
+          <a class="button button-catalog button-more" href="#">показать все</a>
+        </div>
       </article>
-      <!----------------------------------------     ДОПОЛНИТЕЛЬНЫЕ ТОВАРЫ     ---------------------------------------->
-      <h2 class="catalog__subtitle">Дополнительные товары</h2>
+    </div>
+    <!----------------------------------------     ДОПОЛНИТЕЛЬНЫЕ ТОВАРЫ     ---------------------------------------->
+    <h2 class="catalog__subtitle">Дополнительные товары</h2>
+    <div class="catalog__wrapper--extra">
       <article class="catalog__item">
         <h3 class="catalog__vary-name">сахарозаменитель</h3>
         <table class="catalog__table table">
@@ -212,7 +218,7 @@
             <td class="table__value">200 Р.</td>
           </tr>
         </table>
-        <a class="button" href="#">заказать</a>
+        <a class="button button-catalog" href="#">заказать</a>
       </article>
       <article class="catalog__item">
         <h3 class="catalog__vary-name catalog__vary-name--water">питьевая вода</h3>
@@ -222,7 +228,7 @@
             <td class="table__value">50 Р.</td>
           </tr>
         </table>
-        <a class="button" href="#">заказать</a>
+        <a class="button button-catalog" href="#">заказать</a>
       </article>
       <article class="catalog__item">
         <h3 class="catalog__vary-name">молоко</h3>
@@ -232,7 +238,7 @@
             <td class="table__value">100 Р.</td>
           </tr>
         </table>
-        <a class="button" href="#">заказать</a>
+        <a class="button button-catalog" href="#">заказать</a>
       </article>
       <article class="catalog__item">
         <h3 class="catalog__vary-name">витамины</h3>
@@ -242,13 +248,14 @@
             <td class="table__value">300 Р.</td>
           </tr>
         </table>
-        <a class="button" href="#">заказать</a>
+        <a class="button button-catalog" href="#">заказать</a>
       </article>
       <!----------------------------------------     ПОДАРОК     ---------------------------------------->
       <div class="catalog__present">
         <p class="catalog__text">Закажите все и получите чехол для кота в подарок!</p>
       </div>
     </div>
+
     <!----------------------------------------     ПРИГЛАШЕНИЕ К СОТРУДНИЧЕСТВУ     ---------------------------------------->
     <section class="contacts">
       <h2 class="visually-hidden">Адрес и приглашение</h2>

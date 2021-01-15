@@ -1,18 +1,15 @@
 .table {
-  display: flex;
-  justify-content: space-between;
+  min-width: 100%;
 
-  /*outline: 2px solid blue;
-  outline-offset: -2px;*/
+  /*outline: 1px solid orange;
+  outline-offset: -1px;*/
 }
 
 .table__pair {
-  width: 140px;
   display: flex;
   justify-content: space-between;
 
-  /*outline: 2px solid blue;
-  outline-offset: -2px;*/
+  /*background-color: palegreen;*/
 }
 
 .table__head,
@@ -23,10 +20,47 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  display: inline-block;
+  display: block;
 }
 
 .table__pair--extra {
   width: 280px;
   margin-bottom: 17px;
 }
+
+//  ****************************************   TABLET   ****************************************  //
+
+@media (min-width: @tablet-width) {
+  .table {
+    min-width: 77%;
+    margin-left: auto;
+    margin-right: auto;
+
+    position: relative;
+  }
+
+  .table__pair {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    border-bottom: 1px solid @special-grey;
+    /*background-color: palegreen;*/
+  }
+/*
+  .table__pair::after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    border-bottom: 1px solid blue;
+  }
+*/
+  .table__head,
+  .table__value {
+    font-size: 16px;
+    line-height: 32px;
+    color: @special-dark-grey;
+  }
+}
+
+// ****************************************   DESCTOP   **************************************** //

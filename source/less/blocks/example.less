@@ -117,7 +117,7 @@
   display: none;
 }
 
-// TABLET //
+//  ****************************************   TABLET   ****************************************  //
 @media (min-width: @tablet-width) {
   .example {
     /*background-color: @basic-white;*/
@@ -197,6 +197,10 @@
     display: none;
   }
 
+  .example__rigth {
+    position: relative;
+  }
+
   .example__cat-before {
     display: none;
   }
@@ -204,6 +208,8 @@
   .example__cat-halfs {
     display: flex;
     justify-content: center;
+    position: relative;
+
     /*outline: 5px dashed green;
     outline-offset: -5px;*/
   }
@@ -214,7 +220,7 @@
   }
 }
 
-// DESKTOP //
+// ****************************************   DESCTOP   **************************************** //
 @media (min-width: @desktop-width) {
   .example {
     padding: 0;

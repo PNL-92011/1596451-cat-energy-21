@@ -1,5 +1,5 @@
 .copyright {
-  width: 320px;
+  min-width: 280px;
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 28px;
@@ -38,20 +38,30 @@
   fill: fade(@basic-primary, 30%);
 }
 
-// TABLET //
+//  ****************************************   TABLET   ****************************************  //
 @media (min-width: @tablet-width) {
   .copyright {
-    width: 163px;
+    min-width: 21.2%;
     margin-left: 0;
     margin-top: 0;
     margin-bottom: 0;
     margin-right: 30px;
+    justify-content: end;
+  }
+
+  .copyright__link {
+    margin-right: 22px;
   }
 }
 
-// DESTOP //
+// ****************************************   DESCTOP   **************************************** //
 @media (min-width: @desktop-width) {
   .copyright {
+    justify-content: end;
     margin-right: 110px;
+  }
+
+  .copyright__link {
+    margin-right: 22px;
   }
 }

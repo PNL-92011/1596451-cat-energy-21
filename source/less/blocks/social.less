@@ -1,15 +1,23 @@
 .social {
+  min-width: 280px;
   display: flex;
   justify-content: center;
   list-style: none;
   flex-wrap: wrap;
+  padding-left: 0;
+  margin-left: 20px;
+  margin-right: 20px;
 
-  /*outline: 4px dotted green;
-  outline-offset: -4px;*/
+  /*outline: 2px solid green;
+  outline-offset: -2px;*/
 }
 
 .social__item {
   margin-right: 20px;
+}
+
+.social__item:first-child {
+  margin-left: 15px;
 }
 
 .social__link {
@@ -43,7 +51,7 @@
   stroke: fade(@basic-primary, 30%);
 }
 
-// TABLET //
+//  ****************************************   TABLET   ****************************************  //
 @media (min-width: @tablet-width) {
   .social {
     padding-left: 0;

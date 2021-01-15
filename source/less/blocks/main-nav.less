@@ -1,7 +1,5 @@
 .main-nav {
   min-width: 320px;
-  margin-left: 20px;
-  margin-right: 20px;
 
   /*outline: 4px dashed blue;
   outline-offset: -4px;*/
@@ -40,14 +38,6 @@
   color: fade(@basic-black, 80%);
 }
 
-.main-nav__link--current {
-  text-decoration: underline;
-  text-decoration-color: @basic-primary;
-  text-underline-position: under;
-  text-decoration-style: solid;
-  text-decoration-thickness: 2px;
-}
-
 .main-nav__close {
   position: relative;
   margin-top: 0;
@@ -77,7 +67,7 @@
   transform: rotate(-45deg);
 }
 
-// TABLET //
+//  ****************************************   TABLET   ****************************************  //
 @media (min-width: @tablet-width) {
   .main-nav {
     width: 57%;
@@ -103,6 +93,10 @@
     font-weight: 400;
   }
 
+  .main-nav__link--current {
+    border-bottom: 2px solid @basic-primary;
+  }
+
   .main-nav__link-form {
     font-weight: 400;
     font-size: 20px;
@@ -116,7 +110,7 @@
   }
 }
 
-// DESKTOP //
+// ****************************************   DESCTOP   **************************************** //
 @media (min-width: @desktop-width) {
   .main-nav {
     width: 50%;
@@ -135,6 +129,10 @@
     font-size: 20px;
     line-height: 30px;
     color: @basic-white;
+  }
+
+  .main-nav__link--current {
+    border-bottom: 2px solid @basic-white;
   }
 }
 

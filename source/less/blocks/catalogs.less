@@ -2,17 +2,24 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 25px;
+  border-top: 3px solid red;
 
-  /*outline: 3px solid blue;
+  /*outline: 3px dashed blue;
   outline-offset: -3px;*/
+
+  &:last-child {
+    margin-bottom: 0;
+    /*border-bottom: 3px solid red;*/
+  }
 }
 
 .catalog__wrapper {
   display: flex;
-  margin-top: 20px;
-  margin-bottom: 25px;
+  margin-top: 0;
+  margin-bottom: 20px;
 
-  /*outline: 4px solid skyblue;*/
+  /*outline: 3px solid skyblue;*/
 }
 
 .catalog__vary-image {
@@ -20,14 +27,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  /*background-color: plum;*/
 }
 
 .catalog__container {
   width: 50%;
-  /*outline: 4px solid yellowgreen;
-  outline-offset: -4px;*/
 }
 
 .catalog__heading {
@@ -35,33 +38,26 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  color: @special-dark-grey-2;
-
   /*outline: 2px solid red;*/
 }
 
 .catalog__vary-name {
-  display: flex;
   width: 100px;
-  text-decoration: none;
-  color: @special-dark-grey-2;
   font-family: @oswald;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  margin-top: 19px;
+  display: flex;
+  text-decoration: none;
+  color: @special-dark-grey-2;
   text-transform: uppercase;
   text-align: left;
-
-  /*background-color: palegoldenrod;*/
+  align-items: center;
+  /*background-color: yellow;*/
 }
 
-.catalog__vary-name--water {
-  width: 100%;
-}
-
+// Дополнительные товары //
 .catalog__subtitle {
   font-family: @oswald;
   font-weight: 400;
@@ -69,15 +65,96 @@
   line-height: 24px;
   text-align: left;
   color: @basic-black;
+  width: 250px;
+  margin-left: 5.9%;
+  margin-top: 25px;
+  margin-bottom: 36px;
+  position: relative;
+  /*outline: 1px solid blue;*/
+
+  &::after {
+    content: " ";
+    position: absolute;
+    width: 77.5%;
+    height: 1px;
+    border: 1px solid @basic-primary;
+    top: 60%;
+    left: 100%;
+  }
 }
 
-.catalog__present {
-  display: flex;
+.catalog__intro-catalog {
+  width: 87.5%;
+  margin-left: 20px;
+  margin-right: 20px;
+  /*outline: 4px dashed green;
+  outline-offset: -4px*/
+}
+
+.catalog__item--extra {
+  margin-bottom: 19px;
+}
+
+.catalog__item--extra-vit {
+  padding-bottom: 18px;
+  border-bottom: 1px solid red;
+}
+
+.catalog__container--extra {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  /*outline: 4px solid yellowgreen;*/
+}
+
+.catalog__vary-name--extra {
   width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12px;
+}
+
+// Подарок //
+.catalog__present {
+  /* display: flex;*/
+  width: 100%;
   height: 289px;
-  background-image: url("../img/gift-photo-mobile.png");
+  /*background-image: url("../img/gift-photo-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;*/
   margin-top: 39px;
   margin-bottom: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+ /* outline: 6px solid skyblue;*/
+
+  &::after {
+    content: " ";
+    position: absolute;
+    width: 78px;
+    height: 80px;
+    background-image: url(../img/icon_gift.svg);
+    background-repeat: no-repeat;
+    top: 58px;
+    left: 35%;
+  }
+
+  /*
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.png");
+    background-size: cover;
+  }*/
+}
+
+.catalog__picture {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.catalog__gift--mob {
+  height: 289px;
+  position: absolute;
 }
 
 .catalog__text {
@@ -90,65 +167,64 @@
   display: flex;
   align-items: center;
   text-align: center;
-  margin-left: 58px;
+  margin-left: 20.7%;
+  /*margin-top: 160px;*/
+  position: absolute;
+  top: 170px;
+  z-index: 2;
+  /*outline: 1px solid blue;*/
 }
-
-
-.catalog__wrapper--extra{
-  width: 87.5%;
-  margin-left: 20px;
-  margin-right: 20px;
-
-  outline: 5px dashed rgb(116, 231, 116);
-  outline-offset: -5px;
-}
-
 
 // ****************************************   TABLET   **************************************** //
-
 @media (min-width: @tablet-width) {
   .catalog__item {
     width: 42%;
     margin-left: 30px;
     margin-right: 30px;
     margin-top: 140px;
+    margin-bottom: 0;
     background-color: @basic-grey;
-
     position: relative;
-    /*outline: 5px solid blue;
-    outline-offset: -2px;*/
+    border-top: none;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .catalog__wrapper {
     margin-top: 161px;
     display: block;
-
-    /*outline: 4px solid skyblue;*/
   }
 
   .catalog__vary-image {
     width: 52%;
     height: 50%;
-
     position: absolute;
-    top: -20%;
-    left: 22%;
-    /*background-color: plum;*/
+    top: -18%;
+    left: 24%;
+    /*outline: 3px solid skyblue;*/
+  }
+
+  .catalog__vary-image--even {
+    width: 52%;
+    height: 50%;
+    position: absolute;
+    top: -21%;
+    /*outline: 1px solid red;*/
   }
 
   .catalog__container {
     width: 100%;
     text-align: center;
-
   }
 
   .catalog__heading {
-    width: 39%;
+    width: 38%;
     margin-left: auto;
     margin-right: auto;
     font-size: 20px;
     line-height: 24px;
-
     /*outline: 2px solid red;*/
   }
 
@@ -157,7 +233,7 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    /*background-color: palegoldenrod;*/
+    /*background-color: yellow;*/
   }
 
   .catalog__heading--more {
@@ -171,12 +247,232 @@
     display: block;
     text-align: center;
     color: @special-dark-grey;
-    margin-bottom: 87px;
+    margin-bottom: 73px;
+  }
 
+  // Дополнительные товары //
+  .catalog__subtitle {
+    width: 411px;
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 37px;
+    margin-top: 68px;
+    margin-bottom: 80px;
+    text-align: center;
+    position: relative;
+    background-color: @basic-white;
+    /*outline: 2px solid red;*/
 
+    &::before {
+      content: " ";
+      position: absolute;
+      width: 10%;
+      height: 1px;
+      border: 1px solid @basic-primary;
+      top: 60%;
+      left: -10.5%;
+    }
+  }
+
+  .catalog__intro-catalog {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .catalog__item--extra {
+    width: 92%;
+    background-color: @basic-white;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+
+    padding-top: 26px;
+    border: 1px solid @special-grey;
+    /*border: 1px solid red;*/
+    border-top: none;
+
+    &:first-child {
+      border-top: 1px solid @special-grey;
+    }
+  }
+
+  .catalog__container--extra {
+    width: 89.3%;
+    margin-left: 5.5%;
+    margin-right: 5.5%;
+    /*margin-top: 26px;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*outline: 2px solid red;*/
+  }
+
+  .catalog__vary-name--extra {
+    width: 27%;
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+    display: block;
+  }
+
+  // Подарок //
+  .catalog__present {
+    width: 92.3%;
+    height: 200px;
+    /*background-image: url("../img/gift-photo-tablet.png");*/
+    margin: 0 30px;
+    margin-top: 69px;
+    margin-bottom: 76px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &::after {
+      width: 80px;
+      height: 83px;
+      left: 11.2%;
+    }
+
+    /*
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.png");
+    }*/
+  }
+
+  .catalog__gift--tablet {
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 0;
+  }
+
+  .catalog__text {
+    text-align: start;
+    margin-left: 60%;
+    margin-top: 15px;
+    /*outline: 1px solid red;*/
   }
 }
 
-
-
 // ****************************************   DESCTOP   **************************************** //
+@media (min-width: @desktop-width) {
+  .catalog__item {
+    width: 20.1%;
+    height: 430px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    border-top: none;
+
+    &:last-child {
+      margin-bottom: 0;
+      /*border-bottom: none;*/
+    }
+  }
+
+  .catalog__heading {
+    width: 50%;
+    margin-top: 1px;
+    margin-bottom: 0;
+   /* outline: 1px solid red;*/
+  }
+
+  .catalog__vary-name {
+    margin-top: 0;
+  }
+
+  .catalog__vary-image--even {
+    width: 52%;
+    height: 50%;
+    position: absolute;
+    top: -21%;
+    /*outline: 1px solid red;*/
+  }
+
+  // Дополнительные товары //
+  .catalog__intro-catalog {
+    display: flex;
+    margin-bottom: 86px;
+    /*outline: 2px dashed purple;
+    outline-offset: -2px;*/
+  }
+
+  .catalog__subtitle {
+    margin-top: 75px;
+    margin-bottom: 81px;
+    margin-left: 70px;
+
+    &::after {
+      width: 150%;
+      // width: 233%; //
+    }
+
+    &::before {
+      width: 20%;
+      left: -20.5%;
+    }
+  }
+
+  .catalog__item--extra {
+    width: 895px;
+    height: 72px;
+    margin-left: 110px;
+    margin-right: 0;
+    padding-top: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: none;
+    border-top: 1px solid @special-grey;
+
+    &-vit {
+      padding-bottom: 0;
+      border-bottom: 1px solid @special-grey;
+    }
+  }
+
+  .catalog__container--extra {
+    width: 613px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-top: 0;
+    justify-content: start;
+  }
+
+  .catalog__vary-name--extra {
+    width: 300px;
+    margin-left: 0;
+    margin-right: 50px;
+   /* outline: 2px solid red;*/
+  }
+
+  // Подарок //
+  .catalog__present {
+    width: 245px;
+    height: 289px;
+    /*background-image: url("../img/gift-photo-desktop.png");*/
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 80px;
+    margin-right: 110px;
+
+    &::after {
+      width: 80px;
+      height: 83px;
+      left: 34%;
+    }
+
+    .catalog__text {
+      text-align: center;
+      left: -102px;
+      /*outline: 2px solid red;*/
+    }
+  }
+}

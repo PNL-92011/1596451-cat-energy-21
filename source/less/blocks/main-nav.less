@@ -116,6 +116,7 @@
     width: 50%;
     margin-left: 0;
     margin-right: 110px;
+
     /*padding-left: 130px;*/
     justify-content: end;
   }
@@ -125,14 +126,25 @@
   }
 
   .main-nav__link {
-    font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    color: @basic-white;
   }
 
   .main-nav__link--current {
+    border-bottom: 2px solid @basic-primary;
+    height: 15px;
+  }
+
+  .main-nav__link--index {
+    color: @basic-white;
+  }
+
+  .main-nav__link--current-index {
     border-bottom: 2px solid @basic-white;
+  }
+
+  .main-nav__link--catalog {
+    color: @invite;
   }
 }
 

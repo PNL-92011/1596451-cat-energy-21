@@ -3,7 +3,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 25px;
-  border-top: 3px solid red;
+  border-top: 1px solid @special-grey-3;
 
   /*outline: 3px dashed blue;
   outline-offset: -3px;*/
@@ -75,7 +75,8 @@
   &::after {
     content: " ";
     position: absolute;
-    width: 77.5%;
+    // изменить длину декоративной линии //
+    width: 15%;
     height: 1px;
     border: 1px solid @basic-primary;
     top: 60%;
@@ -93,11 +94,12 @@
 
 .catalog__item--extra {
   margin-bottom: 19px;
+  border-bottom: 1px solid @special-grey;
 }
 
 .catalog__item--extra-vit {
   padding-bottom: 18px;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid @special-grey;
 }
 
 .catalog__container--extra {
@@ -409,8 +411,8 @@
     margin-left: 70px;
 
     &::after {
+      // изменить длину декоративной линии //
       width: 150%;
-      // width: 233%; //
     }
 
     &::before {

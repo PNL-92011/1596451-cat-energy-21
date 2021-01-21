@@ -21,16 +21,16 @@
       <button class="main-nav__close" type="button"><span class="visually-hidden">Закрыть</span></button>
       <ul class="main-nav__list">
         <li class="main-nav__item"><a class="main-nav__link main-nav__link--catalog" href="index.html">главная</a></li>
-        <li class="main-nav__item"><a class="main-nav__link main-nav__link--catalog main-nav__link--current" href="catalog.html">каталог продукции</a></li>
-        <li class="main-nav__item"><a class="main-nav__link main-nav__link--catalog" href="form.html">подбор программы</a></li>
+        <li class="main-nav__item"><a class="main-nav__link main-nav__link--catalog" href="catalog.html">каталог продукции</a></li>
+        <li class="main-nav__item"><a class="main-nav__link main-nav__link--catalog  main-nav__link--current" href="form.html">подбор программы</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="main">
     <div class="main__intro">
-      <h1 class="main__title">Подбор программы</h1>
-      <p class="main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <h1 class="main__title main__title--form">Подбор программы</h1>
+      <p class="main__text">Заполните анкету, и мы подберем <br>программу питания для вашего кота</p>
       <form class="form" action="https://echo.htmlacademy.ru/" name="form" method="POST">
         <fieldset class="form__group">
           <div class="form__pair">
@@ -42,7 +42,7 @@
             <input class="form__text form__text--weight" id="profile-weight" type="text" placeholder="7" required>
           </div>
           <div class="form__pair">
-            <label class="form__label" for="profile-age">ВОЗРАСТ (ЛЕТ):</label>
+            <label class="form__label" for="profile-age">ВОЗРАСТ&nbsp;(ЛЕТ):</label>
             <input class="form__text form__text--age" id="profile-age" type="text" placeholder="7" required>
           </div>
         </fieldset>
@@ -60,7 +60,7 @@
             <label class="form__label form__label--radio" for="corr-none">НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)</label>
           </div>
         </fieldset>
-        <fieldset class="form__group">
+        <fieldset class="form__group form__group--none-border">
           <legend class="form__legend">Контактные данные (владельца кота)</legend>
           <div class="form__pair">
             <label class="form__label" for="email">E-MAIL:*</label>
@@ -71,14 +71,14 @@
             <input class="form__text form__text--phone" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
           </div>
         </fieldset>
-        <fieldset class="form__group">
+        <fieldset class="form__group form__group--none-border">
           <legend class="form__legend">Комментарий</legend>
           <div class="form__pair">
             <label class="form__label" for="comments"></label>
             <textarea class="form__textarea" id="comments" name="comments" rows="6">Расскажите обо всех повадках кота</textarea>
           </div>
         </fieldset>
-        <fieldset class="form__group">
+        <fieldset class="form__group form__group--none-border">
           <legend class="form__legend">Дополнительно</legend>
           <div class="form__pair">
             <input class="form__checkbox" id="nosugar" type="checkbox" name="nosugar" checked>
@@ -97,7 +97,7 @@
             <label class="form__label form__label--checkbox" for="vitamins">витамины</label>
           </div>
         </fieldset>
-        <button class="button" type="submit">отправить заявку</button>
+        <button class="button button--form" type="submit">отправить заявку</button>
         <p class="form__small"> <small> * - Oбязательные поля </small> </p>
       </form>
     </div>

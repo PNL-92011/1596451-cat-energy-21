@@ -6,8 +6,8 @@
   padding-top: 0;
   background-color: @basic-white;
 
-  outline: 3px solid rgb(235, 100, 212);
-  outline-offset: -3px;
+  /*outline: 3px solid rgb(235, 100, 212);
+  outline-offset: -3px;*/
 }
 
 .main__intro-major {
@@ -56,16 +56,19 @@
 }
 
 // Form.html //
-.main__intro{
+.main__intro {
   width: 630px;
-  margin-left: 20px;
-  margin-right: 20px;
-
-  outline: 4px dashed green;
-  outline-offset: -4px;
+  /*margin-left: 20px;
+  margin-right: 20px;*/
+  margin-top: 0;
+ /* outline: 4px dashed green;
+  outline-offset: -4px;*/
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main__title {
+  width: 300px;
   font-family: @oswald;
   font-weight: 400;
   font-size: 36px;
@@ -74,31 +77,36 @@
   text-align: left;
   text-decoration: none;
   margin-top: 27px;
-  margin-bottom: 41px;
+  margin-bottom: 40px;
+  padding-left: 20px;
+ /* outline: 1px solid blue;*/
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main__text {
+  width: 300px;
   font-family: @oswald;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: @basic-black;
   text-transform: uppercase;
-  width: 270px;
   text-align: left;
   margin-top: 35px;
   margin-bottom: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  /*outline: 1px solid blue;*/
 }
 
 // Catalog.html //
-.main__intro {
+/*.main__intro {
   width: 100%;
   margin-left: 0;
   margin-right: 0;
-
-  /*outline: 5px solid skyblue ;
-  outline-offset: -5px;*/
-}
+}*/
 
 //  ****************************************   TABLET   ****************************************  //
 @media (min-width: @tablet-width) {
@@ -160,8 +168,6 @@
     margin-top: 0;
   }
 
-  // Form.html //
-
   // Catalog.html //
   .main__intro-catalog {
     width: 100%;
@@ -171,7 +177,7 @@
     flex-wrap: wrap;
   }
 
-  .main__title {
+  /*.main__title {
     width: 92%;
     font-size: 60px;
     line-height: 60px;
@@ -179,6 +185,13 @@
     text-align: left;
     margin-left: 30px;
     margin-bottom: 0;
+  }*/
+
+  // Form.html //
+  .main__title--form {
+    width: 505px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

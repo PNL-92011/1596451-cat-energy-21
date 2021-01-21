@@ -1,0 +1,143 @@
+.more {
+  padding-bottom: 25px;
+
+  /*outline: 3px dashed green;
+  outline-offset: -3px;*/
+}
+
+.more__wrapper {
+  display: block;
+  margin-top: 20px;
+
+  /*outline: 4px solid skyblue;*/
+}
+
+.more__heading {
+  font-family: @oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: @invite;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  margin-top: 78px;
+  margin-bottom: 0;
+  padding-bottom: 8px;
+  position: relative;
+  /*outline: 1px solid red;*/
+
+  &::before {
+    content: " ";
+    position: absolute;
+    width: 30px;
+    height: 0;
+    border: 2px solid @special-more;
+    top: -39px;
+    /*left: calc(50%-15px);*/
+    left: 50%;
+    transform: rotate(-90deg);
+  }
+
+  &::after {
+    content: " ";
+    position: absolute;
+    width: 30px;
+    height: 0;
+    border: 2px solid @special-more;
+    top: -39px;
+    /*left: calc(50%-15px);*/
+    left: 50%;
+  }
+}
+
+.more__text-small {
+  font-family: @arial;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: @special-dark-grey;
+  margin-bottom: 20px;
+
+  /*outline: 1px solid red;*/
+}
+
+// ****************************************   TABLET   **************************************** //
+@media (min-width: @tablet-width) {
+  .more {
+    background-color: @basic-white;
+    border: 2px solid @basic-grey;
+    box-sizing: border-box;
+    padding-bottom: 0;
+  }
+
+  .more__wrapper {
+    margin-top: 161px;
+    margin-bottom: 50px;
+  }
+
+  .more__heading {
+    width: 42%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 23px;
+    padding-bottom: 0;
+
+    &::before {
+      width: 60px;
+      height: 0;
+      border: 2px solid @special-more;
+      top: -79px;
+      left: 35px;
+      transform: rotate(-90deg);
+    }
+
+    &::after {
+      width: 60px;
+      border: 2px solid @special-more;
+      top: -79px;
+      left: 34px;
+    }
+  }
+
+  .more__text-small {
+    width: 53%;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 86px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// ****************************************   DESCTOP   **************************************** //
+@media (min-width: @desktop-width) {
+  .more__text-small {
+    width: 90%;
+    font-size: 16px;
+    line-height: 18px;
+    /*margin-bottom: 86px;*/
+    margin-left: auto;
+    margin-right: auto;
+
+    /*outline: 1px solid red;*/
+  }
+
+  .more__heading::before {
+    top: -79px;
+    left: 21px;
+  }
+
+  .more__heading::after {
+    top: -79px;
+    left: 20px;
+  }
+}

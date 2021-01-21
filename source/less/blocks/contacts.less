@@ -4,6 +4,7 @@
 
 .contacts__info {
   display: flex;
+  background-color: @basic-grey;
 }
 
 /* Как без <br> сделать правильное расположение слов по строкам? */
@@ -45,19 +46,20 @@
   border: none;
 }
 
-// TABLET //
+//  ****************************************   TABLET   ****************************************  //
 @media (min-width: @tablet-width) {
   .contacts__info {
     height: 201px;
     margin-left: 0;
     align-items: center;
     justify-content: space-between;
+    background-color: @basic-grey;
   }
 
   .contacts__inviting {
     width: 171px;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 21px;
     font-weight: 400;
     margin-left: 71px;
     margin-right: 0;
@@ -85,7 +87,9 @@
   }
 }
 
-// DESCTOP //
+// Catalog.html //
+
+// ****************************************   DESCTOP   **************************************** //
 @media (min-width: @desktop-width) {
   .contacts {
     position: relative;

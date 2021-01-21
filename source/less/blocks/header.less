@@ -26,12 +26,11 @@
   display: none;
 }
 
-
-// TABLET //
+//  ****************************************   TABLET   ****************************************  //
 @media (min-width: @tablet-width) {
   .header {
     width: 100%;
-    height: 108px;
+    height: 113px;
     display: flex;
     justify-content: space-between;
   }
@@ -53,13 +52,20 @@
   }
 }
 
-// DESKTOP //
+// ****************************************   DESCTOP   **************************************** //
 @media (min-width: @desktop-width) {
   .header {
+    height: 90px;
+    padding-top: 70px;
+  }
+
+  .header--index {
     width: 100%;
-    height: 141px;
+    height: 110px;
     padding-top: 30px;
     background: linear-gradient(to right, @basic-white 0, @basic-white 50%, @basic-primary 50%, @basic-primary 100%);
+    /*outline: 2px solid red;
+    outline-offset: -2px;*/
   }
 
   .header__logo {
@@ -82,4 +88,8 @@
   .header__logo-desktop {
     display: block;
   }
+
+  // Catalog.html //
+
+  // Form.html //
 }

@@ -49,12 +49,15 @@
   margin-left: 5px;
 }
 
-// TABLET //
+//  ****************************************   TABLET   ****************************************  //
 @media (min-width: @tablet-width) {
   .slider {
     width: 570px;
     margin-left: auto;
     margin-right: auto;
+    position: absolute;
+    top: 90%;
+    left: 10%;
   }
 
   .slider__toggles {
@@ -70,11 +73,7 @@
     line-height: 30px;
     color: @basic-black;
     background-color: @bg-example;
-
-    text-decoration: underline;
-    text-underline-position: under;
-    text-decoration-style: dotted;
-    text-decoration-color: fade(@basic-black, 24%);
+    border-bottom: 1px dotted fade(@basic-black, 24%);
   }
 
   .slider__container {
@@ -96,7 +95,7 @@
     justify-content: center;
     position: absolute;
     top: -15px;
-    left: 50%;
+    left: 45%;
   }
 
   .slider__plank-core {
@@ -107,10 +106,10 @@
   }
 }
 
-// DESKTOP //
+// ****************************************   DESCTOP   **************************************** //
 @media (min-width: @desktop-width) {
   .slider {
-    margin-right: 42px;
+    top: 85%;
   }
 
   .slider__switcher {

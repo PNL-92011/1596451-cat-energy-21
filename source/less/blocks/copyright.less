@@ -1,12 +1,9 @@
 .copyright {
-  min-width: 320px;
-  margin-left: auto;
-  margin-right: auto;
+  min-width: 280px;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-top: 28px;
   margin-bottom: 28px;
-  padding-left: 19px;
-  padding-right: 20px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,13 +38,27 @@
   fill: fade(@basic-primary, 30%);
 }
 
-// TABLET //
+//  ****************************************   TABLET   ****************************************  //
 @media (min-width: @tablet-width) {
   .copyright {
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
+    min-width: 21.2%;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 30px;
     justify-content: end;
+  }
+
+  .copyright__link {
+    margin-right: 22px;
+  }
+}
+
+// ****************************************   DESCTOP   **************************************** //
+@media (min-width: @desktop-width) {
+  .copyright {
+    justify-content: end;
+    margin-right: 110px;
   }
 
   .copyright__link {

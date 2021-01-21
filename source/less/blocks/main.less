@@ -1,3 +1,4 @@
+// Index.html //
 .main {
   min-width: 320px;
   margin-left: 0;
@@ -5,29 +6,16 @@
   padding-top: 0;
   background-color: @basic-white;
 
-  /*outline: 2px solid blue;
-  outline-offset: -2px;*/
+  /*outline: 3px solid rgb(235, 100, 212);
+  outline-offset: -3px;*/
 }
 
-// Index.html //
 .main__intro-major {
   padding-top: 20px;
   background: linear-gradient(to bottom, fade(@basic-primary, 85%) 0, fade(@basic-primary, 85%) 302px, @basic-white 302px, @basic-white 100%), url("../img/cat-background-mobile.jpg") no-repeat 50% 0;
 
   /*outline: 5px dashed pink;
   outline-offset: -5px;*/
-}
-
-.main__can {
-  width: 280px;
-  height: 270px;
-  margin-left: auto;
-  margin-right: auto;
-  background: url("../img/can-mobile.png") no-repeat;
-  margin-top: 50px;
-
-  /*outline: 2px solid blue;
-  outline-offset: -2px;*/
 }
 
 .main__title-major {
@@ -55,30 +43,49 @@
   position: relative;
 }
 
-// Form.html //
-.main__intro {
+.main__can {
   width: 280px;
+  height: 270px;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 20px;
-  padding-left: 20px;
+  background: url("../img/can-mobile.png") no-repeat;
+  margin-top: 50px;
 
-  /*outline: 4px dashed rgb(182, 59, 165);
+  /*outline: 2px solid blue;
+  outline-offset: -2px;*/
+}
+
+// Form.html //
+.main__intro {
+  width: 630px;
+  /*margin-left: 20px;
+  margin-right: 20px;*/
+  margin-top: 0;
+  /* outline: 4px dashed green;
   outline-offset: -4px;*/
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main__title {
+  width: 300px;
   font-family: @oswald;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   color: @basic-black;
   text-align: left;
-  margin-bottom: 27px;
   text-decoration: none;
+  margin-top: 27px;
+  margin-bottom: 40px;
+  padding-left: 20px;
+  /* outline: 1px solid blue;*/
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main__text {
+  width: 300px;
   font-family: @oswald;
   font-weight: 400;
   font-size: 14px;
@@ -86,28 +93,44 @@
   color: @basic-black;
   text-transform: uppercase;
   text-align: left;
-  padding-right: 74px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  /*outline: 1px solid blue;*/
 }
 
 // Catalog.html //
-.main__intro-catalog {
-  width: 280px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 20px;
-  padding-left: 20px;
+/*.main__intro {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}*/
 
-  /*outline: 1px solid rgb(182, 59, 165);
-  outline-offset: -1px;*/
-}
-
-// TABLET //
+//  ****************************************   TABLET   ****************************************  //
 @media (min-width: @tablet-width) {
-  /*.main {
+  .main__title {
+    width: 660px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    margin-right: auto;
+    margin-left: 71px;
+  }
 
-    /*outline: 4px solid blue;
-    outline-offset: -4px;
-  }*/
+  .main__text {
+    font-size: 20px;
+    line-height: 30px;
+    color: @basic-black;
+    text-transform: uppercase;
+    width: 390px;
+    text-align: left;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-right: auto;
+    margin-left: 71px;
+  }
 
   .main__intro-major {
     margin-left: 30px;
@@ -144,10 +167,35 @@
     background: url("../img/can-tablet.png") no-repeat;
     margin-top: 0;
   }
+
+  // Catalog.html //
+  .main__intro-catalog {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /*.main__title {
+    width: 92%;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 0;
+  }*/
+
+  // Form.html //
+  .main__title--form {
+    width: 505px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-
-// DESCTOP //
+// ****************************************   DESCTOP   **************************************** //
 @media (min-width: @desktop-width) {
   .main__intro-major {
     margin-left: 0;
@@ -199,5 +247,14 @@
 
     /*outline: 2px solid rgb(182, 59, 165);
     outline-offset: -2px;*/
+  }
+
+  // Catalog.html //
+  .main__intro-catalog {
+    width: 84.7%;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-bottom: 0;
+    justify-content: space-between;
   }
 }

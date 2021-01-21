@@ -1,5 +1,5 @@
 .footer {
-  padding-top: 20px;
+  min-width: 280px;
   background-color: @basic-grey;
   text-align: center;
 
@@ -10,28 +10,37 @@
 .footer__logo {
   margin-top: 39px;
   margin-bottom: 32px;
-
-  /*outline: 2px solid red;
-  outline-offset: -2px;*/
+  /*outline: 2px solid green;*/
 }
 
-// TABLET //
+//  ****************************************   TABLET   ****************************************  //
 @media (min-width: @tablet-width) {
   .footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
     height: 150px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 0;
     align-items: center;
   }
 
   .footer__logo {
     margin-top: 0;
+    margin-left: 30px;
     margin-bottom: 0;
 
     /*outline: 2px solid green;
     outline-offset: -2px;*/
+  }
+}
+
+// ****************************************   DESCTOP   **************************************** //
+@media (min-width: @desktop-width) {
+  .footer {
+    height: 149px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__logo {
+    margin-left: 110px;
   }
 }

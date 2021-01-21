@@ -2,7 +2,6 @@
   width: 280px;
   margin-left: auto;
   margin-right: auto;
-
   /*outline: 4px solid skyblue;
   outline-offset: -4px;*/
 }
@@ -92,17 +91,13 @@
   top: 10px;
 }
 
-// TABLET //
+//  ****************************************   TABLET   ****************************************  //
 @media (min-width: @tablet-width) {
   .description {
     width: 100%;
-
-    /*outline: 3px solid green;
-    outline-offset: -2px;*/
   }
 
   .description__title {
-    width: 375px;
     font-size: 60px;
     line-height: 60px;
     margin-top: 42px;
@@ -114,38 +109,28 @@
     margin-bottom: 0;
     height: 597px;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    /*justify-content: space-between;*/
-
-    /*outline: 2px solid skyblue;
-    outline-offset: -2px;*/
   }
 
   .description__item {
-    /*height: 280px;*/
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 37px;
-    width: 250px;
-    padding-left: 0;
-    margin-right: 100px;
+    width: 37%;
+    margin-right: 13%;
     padding-top: 151px;
+    padding-left: 0;
     padding-bottom: 57px;
 
     /*outline: 2px solid orange;
     outline-offset: -2px;*/
   }
 
-  /*.description__item--leaf,
-  .description__item--tub,
-  .description__item--eat,
-  .description__item--alarm {
-    width: 250px;
-    padding-left: 0;
-    margin-right: 100px;
-    padding-top: 151px;
-    padding-bottom: 57px;
-  }*/
+  .description__item:nth-child(2n) {
+    margin-left: 3%;
+    margin-right: 5%;
+  }
 
   .description__item::before {
     width: 80px;
@@ -154,7 +139,7 @@
   }
 }
 
-// DESKTOP //
+// ****************************************   DESCTOP   **************************************** //
 @media (min-width: @desktop-width) {
   .description {
     height: 385px;
@@ -164,7 +149,7 @@
     margin-top: 71px;
     margin-bottom: 72px;
     margin-left: 110px;
-    line-height: 60px;
+    margin-right: 110px;
 
     /*outline: 2px solid orange;
     outline-offset: -2px;*/
@@ -172,15 +157,18 @@
 
   .description__list {
     height: 227px;
+    margin-left: 110px;
+    margin-right: 106px;
 
-    /*outline: 5px dotted green;
+    /*outline: 5px solid green;
     outline-offset: -5px;*/
   }
 
   .description__item {
-    width: 17%;
+    width: 20%;
     margin-top: 110px;
-    margin-right: 80px;
+    margin-right: 0;
+    margin-left: 0;
     padding-top: 0;
     padding-bottom: 0;
 
@@ -188,12 +176,9 @@
     outline-offset: -5px;*/
   }
 
-  .description__item--leaf {
-    margin-left: 110px;
-  }
-
-  .description__item--alarm {
-    margin-right: 110px;
+  .description__item:nth-child(2n) {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .description__item::before {

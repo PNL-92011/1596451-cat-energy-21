@@ -1,18 +1,14 @@
 .table {
-  display: flex;
-  justify-content: space-between;
+  /*min-width: 100%;*/
+  width: 142px;
 
-  /*outline: 2px solid blue;
+  /*outline: 2px solid orange;
   outline-offset: -2px;*/
 }
 
 .table__pair {
-  width: 140px;
   display: flex;
   justify-content: space-between;
-
-  /*outline: 2px solid blue;
-  outline-offset: -2px;*/
 }
 
 .table__head,
@@ -23,10 +19,91 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  display: inline-block;
+  display: block;
+}
+
+// Дополнительные товары //
+.table-extra {
+  min-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .table__pair--extra {
   width: 280px;
   margin-bottom: 17px;
+}
+
+//  ****************************************   TABLET   ****************************************  //
+
+@media (min-width: @tablet-width) {
+  .table {
+    min-width: 76.5%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+  .table__pair {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    border-bottom: 1px solid @special-grey;
+
+    /*background-color: thistle;*/
+  }
+
+  .table__head,
+  .table__value {
+    font-size: 16px;
+    line-height: 32px;
+    color: @special-dark-grey;
+  }
+
+  // Дополнительные товары //
+  .table-extra {
+    min-width: 32%;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: end;
+  }
+
+  .table__pair--extra {
+    border: none;
+    justify-content: end;
+  }
+
+  .table__head--extra {
+    margin-right: 0;
+  }
+
+  .table__value--extra {
+    margin-left: 49px;
+  }
+}
+
+// ****************************************   DESCTOP   **************************************** //
+@media (min-width: @desktop-width) {
+  .table {
+    margin-top: 20px;
+    margin-bottom: 33px;
+  }
+
+  // Дополнительные товары //
+  .table-extra {
+    min-width: 285px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: end;
+  }
+
+  .table__pair--extra {
+    width: 285px;
+    border: none;
+    justify-content: space-between;
+  }
 }

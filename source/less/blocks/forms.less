@@ -8,22 +8,59 @@
 }
 
 .form__group {
+  color: @special-dark-grey;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
   border: none;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 0;
-  padding-right: 0;
+  border-bottom: 1px solid @special-light-grey;
+
+
+  /*outline: 1px solid blue;
+  outline-offset: -1px;*/
+
+  &--none-border {
+    border-bottom: none;
+  }
 }
 
 .form__pair {
+  width: 280px;
   line-height: 30px;
   display: flex;
   align-items: center;
+  margin-bottom: 14px;
+  margin-left: auto;
+  margin-right: auto;
+
+  /*outline: 1px solid orange;
+  outline-offset: -1px;*/
+
+  &:last-child {
+    margin-bottom: 24px;
+  }
 }
 
 .form__label {
   color: @special-dark-grey;
   text-transform: uppercase;
+}
+
+.form__text,
+.form__textarea {
+  height: 45px;
+  font-size: 16px;
+  font-family: @oswald;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: @special-dark-grey;
+  padding-left: 15px;
+  margin-left: 15px;
+
+  flex-grow: 1;
+  border: 1px solid @form-border;
+  /*background-color: cadetblue;*/
 }
 
 .form__radio {
@@ -34,19 +71,6 @@
 .form__label--radio {
   margin-left: 16px;
   color: @special-dark-grey-2;
-}
-
-.form__text,
-.form__text--email,
-.form__text--phone,
-.form__textarea {
-  height: 45px;
-  font-size: 16px;
-  font-family: @oswald;
-  text-transform: uppercase;
-  color: @special-dark-grey;
-  padding-left: 15px;
-  margin-left: 15px;
 }
 
 .form__label--checkbox {
@@ -62,7 +86,7 @@
   margin-left: 0;
 }
 
-.main__small {
+.form__small {
   font-family: @arial;
   font-style: normal;
   font-weight: 400;
@@ -72,3 +96,28 @@
   text-transform: none;
   text-align: center;
 }
+
+//  ****************************************   TABLET   ****************************************  //
+@media (min-width: @tablet-width) {
+  .form__pair {
+    width: 630px;
+    margin-left: 71px;
+    margin-right: 67px;
+
+    /*outline: 1px solid orange;
+    outline-offset: -1px;*/
+  }
+
+  .form__label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__text {
+    padding-left: 19px;
+    margin-left: 10px;
+    /*color: darkblue;*/
+  }
+}
+
+// ****************************************   DESCTOP   **************************************** //

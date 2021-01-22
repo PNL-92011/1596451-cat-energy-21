@@ -62,7 +62,6 @@
     margin-right: auto;
     justify-content: space-between;
     align-items: center;
-
     position: absolute;
     top: 3460px;
     left: 50%;
@@ -109,11 +108,21 @@
 
 // ****************************************   DESCTOP   **************************************** //
 @media (min-width: @desktop-width) {
-  .slider {
-    top: 85%;
+  .slider__toggles {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+
+    top: 2190px;
+    left: 73%;
+    /*transform: translateX(-50%);*/
   }
 
   .slider__switcher {
     background-color: @basic-grey;
+    margin-left: 20px;
+    margin-right: 24px;
   }
 }

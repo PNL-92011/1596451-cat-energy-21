@@ -121,7 +121,6 @@
     padding-top: 151px;
     padding-left: 0;
     padding-bottom: 57px;
-    z-index: 2;
 
     outline: 2px solid orange;
     outline-offset: -2px;
@@ -229,29 +228,37 @@
 
   .description__item {
     width: 20%;
-    margin-top: 110px;
+    height: 280px;
+    margin-top: 0;
     margin-right: 0;
     margin-left: 0;
-    padding-top: 0;
+    padding-top: 111px;
     padding-bottom: 0;
+    box-sizing: border-box;
 
-    /*outline: 5px solid red;
-    outline-offset: -5px;*/
+    outline: 3px solid red;
+    outline-offset: -3px;
   }
 
   .description__item:nth-child(2n) {
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 0;
   }
 
   .description__item::before {
-    top: -110px;
+    top: 0;
   }
 
   .description__item--leaf::after,
   .description__item--tub::after,
   .description__item--eat::after,
   .description__item--alarm::after {
-    display: none;
+    content: " ";
+    position: absolute;
+    width: 30px;
+    height: 32px;
+    left: 10%;
+    top: 10%;
   }
 }

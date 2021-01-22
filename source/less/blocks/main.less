@@ -4,8 +4,8 @@
   padding-top: 0;
   background-color: @basic-white;
 
-  outline: 3px solid rgb(235, 100, 212);
-  outline-offset: -3px;
+ /* outline: 3px solid rgb(235, 100, 212);
+  outline-offset: -3px;*/
 }
 
 .main__intro-major {
@@ -14,6 +14,7 @@
   margin-right: auto;
   padding-top: 20px;
   background-image: url("../img/promo.jpg") no-repeat;
+  background-size: contain;
   /*background: linear-gradient(to bottom, fade(@basic-primary, 85%) 0, fade(@basic-primary, 85%) 302px, @basic-white 302px, @basic-white 100%), url("../img/cat-background-mobile.jpg") no-repeat 50% 0;*/
   box-sizing: border-box;
 
@@ -21,8 +22,8 @@
     background: url("../img/promo@2x.png") no-repeat;
   }
 
-  outline: 5px dashed blue;
-  outline-offset: -5px;
+ /* outline: 5px dashed blue;
+  outline-offset: -5px;*/
 }
 
 .main__title-major {
@@ -63,7 +64,7 @@
   @media (min-resolution: 2dppx) {
     background-image: url("../img/can-mobile@2x.png");
 
-    outline: 5px dashed blue;
+    /*outline: 5px dashed blue;*/
   }
 }
 
@@ -78,7 +79,7 @@
 }
 
 .main__title {
-  width: 300px;
+  width: 100%;
   font-family: @oswald;
   font-weight: 400;
   font-size: 36px;
@@ -91,6 +92,8 @@
   padding-left: 20px;
   margin-left: auto;
   margin-right: auto;
+
+ /* outline: 5px dashed blue;*/
 }
 
 .main__text {
@@ -107,7 +110,7 @@
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
-  outline: 1px solid blue;
+ /* outline: 1px solid blue;*/
 }
 
 // Catalog.html //
@@ -115,7 +118,7 @@
 //  ****************************************   TABLET   ****************************************  //
 @media (min-width: @tablet-width) {
   .main__title {
-    width: 738px;
+    width: 100%;
     font-size: 60px;
     line-height: 60px;
     text-align: left;
@@ -175,7 +178,7 @@
     @media (min-resolution: 2dppx) {
       background: url("../img/can-tablet@2x.png") no-repeat;
 
-      outline: 5px dashed blue;
+      /*outline: 5px dashed blue;*/
     }
   }
 

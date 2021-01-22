@@ -12,7 +12,7 @@
   font-family: @oswald;
   font-weight: 400;
   margin-top: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 38px;
 }
 
 .description__list {
@@ -28,12 +28,12 @@
   line-height: 18px;
   color: @special-dark-grey;
   padding-left: 80px;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
   position: relative;
 }
 
 .description__item:last-child {
-  margin-bottom: 37px;
+  margin-bottom: 46px;
 }
 
 .description__item::before {
@@ -52,8 +52,7 @@
   position: absolute;
   width: 30px;
   height: 32px;
-  background-image: url("../../img/icon-leaf.svg");
-  background-repeat: no-repeat;
+  background: url("../img/icon-leaf.svg") no-repeat;
   left: 16px;
   top: 11px;
 }
@@ -100,8 +99,8 @@
   .description__title {
     font-size: 60px;
     line-height: 60px;
-    margin-top: 42px;
-    margin-bottom: 32px;
+    margin-top: 45px;
+    margin-bottom: 72px;
   }
 
   .description__list {
@@ -122,9 +121,10 @@
     padding-top: 151px;
     padding-left: 0;
     padding-bottom: 57px;
+    z-index: 2;
 
-    /*outline: 2px solid orange;
-    outline-offset: -2px;*/
+    outline: 2px solid orange;
+    outline-offset: -2px;
   }
 
   .description__item:nth-child(2n) {
@@ -135,6 +135,69 @@
   .description__item::before {
     width: 80px;
     height: 80px;
+    top: 40px;
+  }
+
+  .description__item--leaf {
+    background: url("../img/number-1.svg") no-repeat;
+  }
+
+  .description__item--tub {
+    background: url("../img/number-2.svg") no-repeat;
+  }
+
+  .description__item--eat {
+    background: url("../img/number-3.svg") no-repeat;
+  }
+
+  .description__item--alarm {
+    background: url("../img/number-4.svg") no-repeat;
+  }
+
+  // icon 1 //
+  .description__item--leaf::after {
+    content: " ";
+    position: absolute;
+    width: 30px;
+    height: 32px;
+    background-image: url("../../img/icon-leaf.svg");
+    left: 16px;
+    top: 45px;
+  }
+
+  // icon 2 //
+  .description__item--tub::after {
+    content: " ";
+    position: absolute;
+    width: 29px;
+    height: 31px;
+    background-image: url("../../img/icon-tub.svg");
+    background-repeat: no-repeat;
+    left: 15px;
+    top: 40px;
+  }
+
+  // icon 3 //
+  .description__item--eat::after {
+    content: " ";
+    position: absolute;
+    width: 25px;
+    height: 30px;
+    background-image: url("../../img/icon-eat.svg");
+    background-repeat: no-repeat;
+    left: 18px;
+    top: 45px;
+  }
+
+  // icon 4 //
+  .description__item--alarm::after {
+    content: " ";
+    position: absolute;
+    width: 32px;
+    height: 33px;
+    background-image: url("../../img/icon-alarm.svg");
+    background-repeat: no-repeat;
+    left: 14px;
     top: 40px;
   }
 }

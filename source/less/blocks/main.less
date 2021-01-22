@@ -1,8 +1,6 @@
 // Index.html //
 .main {
   min-width: 320px;
-  /*margin-left: 0;
-  margin-right: 0;*/
   padding-top: 0;
   background-color: @basic-white;
 
@@ -11,13 +9,17 @@
 }
 
 .main__intro-major {
-  width: 320px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 20px;
-  background-image: url("../img/promo.jpg");
-  background-repeat: no-repeat;
+  background-image: url("../img/promo.jpg") no-repeat;
   /*background: linear-gradient(to bottom, fade(@basic-primary, 85%) 0, fade(@basic-primary, 85%) 302px, @basic-white 302px, @basic-white 100%), url("../img/cat-background-mobile.jpg") no-repeat 50% 0;*/
+  box-sizing: border-box;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/promo@2x.png") no-repeat;
+  }
 
   outline: 5px dashed blue;
   outline-offset: -5px;
@@ -33,8 +35,10 @@
   text-align: center;
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 0;
-  margin-bottom: 27px;
+  /*margin-top: 27px;*/
+  margin-bottom: 25px;
+
+ /* outline: 2px solid blue;*/
 }
 
 .main__slogan {
@@ -54,10 +58,13 @@
   margin-left: auto;
   margin-right: auto;
   background: url("../img/can-mobile.png") no-repeat;
-  margin-top: 50px;
+  margin-top: 29px;
 
-  /*outline: 2px solid blue;
-  outline-offset: -2px;*/
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/can-mobile@2x.png");
+
+    outline: 5px dashed blue;
+  }
 }
 
 // Form.html //
@@ -66,8 +73,6 @@
   /*margin-left: 20px;
   margin-right: 20px;*/
   margin-top: 0;
-  outline: 4px dashed green;
-  outline-offset: -4px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -86,8 +91,6 @@
   padding-left: 20px;
   margin-left: auto;
   margin-right: auto;
-
-  outline: 1px solid blue;
 }
 
 .main__text {
@@ -119,7 +122,6 @@
     margin-left: auto;
     margin-right: auto;
     padding-left: 30px;
-    outline: 1px solid blue;
   }
 
   .main__title--form {
@@ -139,7 +141,9 @@
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 0;
+    padding-bottom: 47px;
     background: none;
+    border-bottom: 1px solid @color-decor;
   }
 
   .main__title-major {
@@ -149,7 +153,7 @@
     color: @basic-black;
     text-align: left;
     margin-left: 12%;
-    margin-top: 40px;
+    margin-top: 27px;
     margin-bottom: 0;
   }
 
@@ -168,7 +172,11 @@
     background: url("../img/can-tablet.png") no-repeat;
     margin-top: 0;
 
-    outline: 1px solid blue;
+    @media (min-resolution: 2dppx) {
+      background: url("../img/can-tablet@2x.png") no-repeat;
+
+      outline: 5px dashed blue;
+    }
   }
 
   // Catalog.html //
@@ -202,18 +210,22 @@
   .main__intro-major {
     margin-left: 0;
     margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .main__intro-heading {
-    height: 579px;
+    height: 694px;
     padding-left: 0;
     padding-right: 0;
-    /*background: linear-gradient(to right, @basic-white 0, @basic-white 50%, @basic-primary 50%, @basic-primary 100%), url("../img/cat-background-desktop.jpg") no-repeat;*/
-    background-image: url(../img/Header.jpg);
-    background-repeat: no-repeat;
+    margin-top: -141px;
+    margin-left: 110px;
+    background: url("../img/header.png") no-repeat;
     position: relative;
 
-    border-bottom: 3px solid red;
+    @media (min-resolution: 2dppx) {
+      background: url("../img/header@2x.png") no-repeat;
+    }
   }
 
   .main__title-major {
@@ -225,8 +237,8 @@
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
-    padding-top: 85px;
-    padding-left: 190px;
+    padding-top: 223px;
+    padding-left: 80px;
 
     /*outline: 2px solid blue;
     outline-offset: -2px;*/
@@ -234,7 +246,7 @@
 
   .main__slogan {
     margin-left: 0;
-    padding-left: 190px;
+    padding-left: 80px;
 
     /*outline: 4px solid skyblue;
     outline-offset: -4px;*/
@@ -248,11 +260,12 @@
     margin-left: 0;
     margin-right: 0;
     position: absolute;
-    top: 0;
-    left: 38.8%;
+    top: 141px;
+    left: 34%;
 
-    /*outline: 2px solid rgb(182, 59, 165);
-    outline-offset: -2px;*/
+    @media (min-resolution: 2dppx) {
+      background: url("../img/can-desktop@2x.png") no-repeat;
+    }
   }
 
   // Catalog.html //
@@ -266,292 +279,6 @@
 
   .main__title--form {
     width: 1330px;
-    padding-left: 110px;
-  }
-
-  // Index.html //
-  .main {
-    min-width: 320px;
-    /*margin-left: 0;
-  margin-right: 0;*/
-    padding-top: 0;
-    background-color: @basic-white;
-
-    outline: 3px solid rgb(235, 100, 212);
-    outline-offset: -3px;
-  }
-
-  .main__intro-major {
-    width: 320px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 20px;
-    background-image: url("../img/promo.jpg");
-    background-repeat: no-repeat;
-    /*background: linear-gradient(to bottom, fade(@basic-primary, 85%) 0, fade(@basic-primary, 85%) 302px, @basic-white 302px, @basic-white 100%), url("../img/cat-background-mobile.jpg") no-repeat 50% 0;*/
-
-    outline: 5px dashed blue;
-    outline-offset: -5px;
-  }
-
-  .main__title-major {
-    min-width: 250px;
-    font-family: @oswald;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 36px;
-    color: @basic-white;
-    text-align: center;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 0;
-    margin-bottom: 27px;
-  }
-
-  .main__slogan {
-    font-family: @oswald;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 14px;
-    color: @basic-white;
-    text-transform: uppercase;
-    text-align: center;
-    position: relative;
-  }
-
-  .main__can {
-    width: 280px;
-    height: 270px;
-    margin-left: auto;
-    margin-right: auto;
-    background: url("../img/can-mobile.png") no-repeat;
-    margin-top: 50px;
-
-    /*outline: 2px solid blue;
-  outline-offset: -2px;*/
-  }
-
-  // Form.html //
-  .main__intro {
-    /*width: 320px;*/
-    /*margin-left: 20px;
-  margin-right: 20px;*/
-    margin-top: 0;
-    outline: 4px dashed green;
-    outline-offset: -4px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .main__title {
-    width: 300px;
-    font-family: @oswald;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 36px;
-    color: @basic-black;
-    text-align: left;
-    text-decoration: none;
-    margin-top: 27px;
-    margin-bottom: 40px;
-    padding-left: 20px;
-    margin-left: auto;
-    margin-right: auto;
-
-    outline: 1px solid blue;
-  }
-
-  .main__text {
-    width: 300px;
-    font-family: @oswald;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    color: @basic-black;
-    text-transform: uppercase;
-    text-align: left;
-    margin-top: 35px;
-    margin-bottom: 35px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    outline: 1px solid blue;
-  }
-
-  // Catalog.html //
-
-  //  ****************************************   TABLET   ****************************************  //
-  @media (min-width: @tablet-width) {
-    .main__title {
-      width: 738px;
-      font-size: 60px;
-      line-height: 60px;
-      text-align: left;
-      margin-left: auto;
-      margin-right: auto;
-      padding-left: 30px;
-      outline: 1px solid blue;
-    }
-
-    .main__title--form {
-      width: 698px;
-      padding-left: 70px;
-    }
-
-    .main__text {
-      width: 698px;
-      font-size: 20px;
-      line-height: 30px;
-      padding-left: 70px;
-    }
-
-    .main__intro-major {
-      min-width: 92.2%;
-      padding-left: 30px;
-      padding-right: 30px;
-      padding-top: 0;
-      background: none;
-    }
-
-    .main__title-major {
-      width: 450px;
-      font-size: 60px;
-      line-height: 60px;
-      color: @basic-black;
-      text-align: left;
-      margin-left: 12%;
-      margin-top: 40px;
-      margin-bottom: 0;
-    }
-
-    .main__slogan {
-      font-size: 20px;
-      line-height: 20px;
-      color: @basic-black;
-      text-align: left;
-      margin-left: 12%;
-      margin-top: 40px;
-    }
-
-    .main__can {
-      width: 709px;
-      height: 609px;
-      background: url("../img/can-tablet.png") no-repeat;
-      margin-top: 0;
-
-      outline: 1px solid blue;
-    }
-
-    // Catalog.html //
-    .main__intro-catalog {
-      width: 100%;
-      margin-left: 0;
-      margin-right: 0;
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    /*.main__title {
-    width: 92%;
-    font-size: 60px;
-    line-height: 60px;
-    font-weight: 400;
-    text-align: left;
-    margin-left: 30px;
-    margin-bottom: 0;
-  }*/
-
-    // Form.html //
-    .main__intro {
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-
-  // ****************************************   DESCTOP   **************************************** //
-  @media (min-width: @desktop-width) {
-    .main__intro-major {
-      margin-left: 0;
-      margin-right: 0;
-    }
-
-    .main__intro-heading {
-      height: 579px;
-      padding-left: 0;
-      padding-right: 0;
-      /*background: linear-gradient(to right, @basic-white 0, @basic-white 50%, @basic-primary 50%, @basic-primary 100%), url("../img/cat-background-desktop.jpg") no-repeat;*/
-      background-image: url(../img/Header.jpg);
-      background-repeat: no-repeat;
-      position: relative;
-
-      border-bottom: 3px solid red;
-    }
-
-    .main__title-major {
-      font-size: 60px;
-      line-height: 60px;
-      color: @basic-black;
-      text-align: start;
-      margin-top: 0;
-      margin-bottom: 0;
-      margin-left: 0;
-      margin-right: 0;
-      padding-top: 85px;
-      padding-left: 190px;
-
-      /*outline: 2px solid blue;
-    outline-offset: -2px;*/
-    }
-
-    .main__slogan {
-      margin-left: 0;
-      padding-left: 190px;
-
-      /*outline: 4px solid skyblue;
-    outline-offset: -4px;*/
-    }
-
-    .main__can {
-      width: 522px;
-      height: 499px;
-      background: url("../img/can-desktop.png") no-repeat;
-      margin-top: 0;
-      margin-left: 0;
-      margin-right: 0;
-      position: absolute;
-      top: 0;
-      left: 38.8%;
-
-      /*outline: 2px solid rgb(182, 59, 165);
-    outline-offset: -2px;*/
-    }
-
-    // Catalog.html //
-    .main__intro-catalog {
-      width: 84.7%;
-      margin-left: 110px;
-      margin-right: 110px;
-      margin-bottom: 0;
-      justify-content: space-between;
-    }
-
-    .main__title--form {
-      width: 1330px;
-      padding-left: 110px;
-    }
-
-    .main__text {
-      width: 1330px;
-      font-size: 20px;
-      line-height: 30px;
-      padding-left: 110px;
-    }
-  }
-
-  .main__text {
-    width: 1330px;
-    font-size: 20px;
-    line-height: 30px;
     padding-left: 110px;
   }
 }

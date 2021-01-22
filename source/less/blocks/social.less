@@ -1,19 +1,25 @@
 .social {
   min-width: 280px;
+  height: 63px;
   display: flex;
   justify-content: center;
+  align-items: center;
   list-style: none;
   flex-wrap: wrap;
   padding-left: 0;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 32px;
+  border-top: 1px solid @special-light-grey;
+  border-bottom: 1px solid @special-light-grey;
 
-  /*outline: 2px solid green;
-  outline-offset: -2px;*/
+  outline: 2px solid green;
+  outline-offset: -2px;
 }
 
 .social__item {
   margin-right: 20px;
+  outline: 2px solid red;
 }
 
 .social__item:first-child {
@@ -54,9 +60,13 @@
 //  ****************************************   TABLET   ****************************************  //
 @media (min-width: @tablet-width) {
   .social {
+    min-width: 33.3%;
     padding-left: 0;
+    margin-left: 0;
+    margin-right: 0;
     margin-top: 0;
     margin-bottom: 0;
+    border: none;
   }
 
   .social__item {

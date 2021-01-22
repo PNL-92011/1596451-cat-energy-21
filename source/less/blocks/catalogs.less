@@ -5,7 +5,7 @@
   margin-bottom: 25px;
   border-top: 1px solid @special-grey-3;
 
-  /*outline: 2px solid blue;
+  /* outline: 2px solid blue;
   outline-offset: -3px;*/
 
   &:last-child {
@@ -122,17 +122,18 @@
 
 // Подарок //
 .catalog__present {
-  /* display: flex;*/
+  display: flex;
   width: 100%;
   height: 289px;
-  /*background-image: url("../img/gift-photo-mobile.png");
+  background-image: url("../img/gift-photo-mobile.png");
   background-repeat: no-repeat;
-  background-size: cover;*/
+  background-size: contain;
   margin-top: 39px;
   margin-bottom: 35px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
+
   /*outline: 6px solid skyblue;*/
 
   &::after {
@@ -146,21 +147,10 @@
     left: 35%;
   }
 
-  /*
   @media (min-resolution: 2dppx) {
     background-image: url("../img/gift-photo-mobile@2x.png");
-    background-size: cover;
-  }*/
-}
-
-.catalog__picture {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.catalog__gift--mob {
-  height: 289px;
-  position: absolute;
+    /*background-size: cover;*/
+  }
 }
 
 .catalog__text {
@@ -331,37 +321,31 @@
   .catalog__present {
     width: 92.3%;
     height: 200px;
-    /*background-image: url("../img/gift-photo-tablet.png");*/
+    background-image: url("../img/gift-photo-tablet.png");
     margin: 0 30px;
     margin-top: 69px;
     margin-bottom: 76px;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    align-items: center;
+
 
     &::after {
       width: 80px;
       height: 83px;
-      left: 11.2%;
+      left: 11.5%;
     }
 
-    /*
     @media (min-resolution: 2dppx) {
       background-image: url("../img/gift-photo-tablet@2x.png");
-    }*/
-  }
-
-  .catalog__gift--tablet {
-    height: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-    top: 0;
+    }
   }
 
   .catalog__text {
     text-align: start;
     margin-left: 60%;
-    margin-top: 15px;
+    margin-top: -95px;
     /*outline: 1px solid red;*/
   }
 }
@@ -463,7 +447,7 @@
   .catalog__present {
     width: 245px;
     height: 289px;
-    /*background-image: url("../img/gift-photo-desktop.png");*/
+    background-image: url("../img/gift-photo-desktop.png");
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 80px;
@@ -477,7 +461,8 @@
 
     .catalog__text {
       text-align: center;
-      left: -102px;
+      left: -107px;
+      top: 280px;
       /*outline: 2px solid red;*/
     }
   }

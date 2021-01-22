@@ -1,8 +1,5 @@
 .main-nav {
   min-width: 320px;
-
-  /*outline: 4px dashed blue;
-  outline-offset: -4px;*/
 }
 
 .main-nav__list {
@@ -23,7 +20,7 @@
 .main-nav__link {
   text-decoration: none;
   font-family: @oswald;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
@@ -38,14 +35,15 @@
   color: fade(@basic-black, 80%);
 }
 
+/*
 .main-nav__close {
   position: relative;
   margin-top: 0;
   margin-left: 250px;
   /*background-color: transparent;
-  border: 0;*/
+  border: 0;
   background-color: red;
-}
+}*/
 
 /*.main-nav__close::before,
 .main-nav__close::after {
@@ -116,13 +114,16 @@
     width: 50%;
     margin-left: 0;
     margin-right: 110px;
-
-    /*padding-left: 130px;*/
-    justify-content: end;
+    margin-top: 0;
+    z-index: 5;
   }
 
   .main-nav__item:first-child {
     margin-left: 130px;
+  }
+
+  .main-nav__list {
+    margin-top: 34px;
   }
 
   .main-nav__link {
@@ -147,34 +148,3 @@
     color: @invite;
   }
 }
-
-//* Декоративные полоски *//
-/*.main-nav__link::before {
-    content: " ";
-    position: absolute;
-    width: 320px;
-    height: 0;
-    left: 0;
-    top: 0;
-    border: 1px solid @color-decor;
-  }
-
-  .main-nav__link--catalog::before {
-    content: " ";
-    position: absolute;
-    width: 320px;
-    height: 0;
-    left: 0;
-    top: 70px;
-    border: 1px solid @color-decor;
-  }
-
-  .main-nav__link--programm::before {
-    content: " ";
-    position: absolute;
-    width: 320px;
-    height: 0;
-    left: 0;
-    top: 140px;
-    border: 1px solid @color-decor;
-  }*/

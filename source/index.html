@@ -18,7 +18,7 @@
       <a class="header__logo-desktop"><img src="img/logo-desktop.svg" width="202" height="59" alt="Cat Energy"></a>
     </div>
     <nav class="main-nav main-nav--index">
-      <button class="main-nav__close" type="button"><span class="visually-hidden">Закрыть</span></button>
+      <!-- <button class="main-nav__close" type="button"><span class="visually-hidden">Закрыть</span></button> -->
       <ul class="main-nav__list">
         <li class="main-nav__item"><a class="main-nav__link main-nav__link--index main-nav__link--current main-nav__link--current-index" href="index.html">главная</a></li>
         <li class="main-nav__item"><a class="main-nav__link main-nav__link--index" href="catalog.html">каталог продукции</a></li>
@@ -33,7 +33,7 @@
         <h1 class="main__title-major">Функциональное питание для котов</h1>
         <p class="main__slogan">Занялся собой? Займись котом!</p>
         <div class="main__can"></div>
-        <a class="button" href="form.html">подобрать программу</a>
+        <a class="button button--index-desktop" href="form.html">подобрать программу</a>
       </div>
       <section class="programms">
         <h2 class="visually-hidden">Варианты кото-диет</h2>
@@ -80,13 +80,18 @@
           </div>
         </div>
       </div>
-      <div class="example__rigth">
-        <div class="example__cat-before"><img src="img/cat-before-mobile-1.png" width=311 height=232 alt="фото жирного кота"></div>
+      <div class="example__right">
+        <div class="example__cat-before">
+          <img src="img/cat-before-mobile.png" srcset="img/cat-before-mobile@2x.png 2x" alt="фото жирного кота">
+        </div>
         <div class="example__cat-halfs">
-          <img class="example__fat-half-tablet" src="img/cat-half-before-tablet.png" width=354 height=620 alt="фото половины жирного кота">
-          <img class="example__thin-half-tablet" src="img/cat-half-after-tablet.png" width=354 height=607 alt="фото половины худого кота">
-          <img class="example__fat-half-desktop" src="img/cat-half-before-desktop.png" width=405 height=536 alt="фото половины жирного кота">
-          <img class="example__thin-half-desktop" src="img/cat-half-after-desktop.png" width=325 height=654 alt="фото половины худого кота">
+          <picture>
+            <source class="example__fat-half-desktop" media="(min-width: 1440px)" srcset="img/cat-half-before-desktop.png, img/cat-half-before-desktop@2x.png 2x">
+            <source class="example__thin-half-desktop" media="(min-width: 1440px)" srcset="img/cat-half-after-desktop.png, img/cat-half-after-desktop@2x.png 2x">
+            <source class="example__fat-half-desktop" media="(min-width: 768px)" srcset="img/cat-half-before-desktop.png, img/cat-half-before-desktop@2x.png 2x">
+            <source class="example__thin-half-desktop" media="(min-width: 768px)" srcset="img/cat-half-after-desktop.png, img/cat-half-after-desktop@2x.png 2x">
+            <img src="img/cat-before-mobile.png" srcset="img/cat-before-mobile@2x.png 2x" alt="фото жирного кота">
+          </picture>
         </div>
 
         <div class="example__slider slider">

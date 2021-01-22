@@ -1,35 +1,28 @@
-// Нужно ли стиль по тегу выносить в отдельный лесс-файл ? //
-button {
+.button {
+  width: 280px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: @oswald;
+  font-size: 16px;
+  line-height: 20px;
+  color: @basic-white;
+  background-color: @basic-primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
   border: none;
-  margin: 0;
 }
 
-@media (min-width: @mobile-width) {
-  .button {
-    width: 87.5%;
-    height: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: @oswald;
-    font-size: 16px;
-    line-height: 20px;
-    color: @basic-white;
-    background-color: @basic-primary;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
+.button--more {
+  color: @special-dark-grey;
+  background-color: @basic-grey;
+}
 
-  .button--more {
-    color: @special-dark-grey;
-    background-color: @basic-grey;
-  }
-
-  .button--extra {
-    width: 100%;
-  }
+.button--extra {
+  width: 100%;
 }
 
 // ****************************************   TABLET   **************************************** //
@@ -76,14 +69,18 @@ button {
 // ****************************************   DESCTOP   **************************************** //
 @media (min-width: @desktop-width) {
   .button {
-    width: 68.6%;
-    height: 40px;
     font-size: 20px;
     line-height: 20px;
     margin-top: 0;
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .button--index-desktop {
+    position: absolute;
+    top: 455px;
+    left: 80px;
   }
 
   .button--more {

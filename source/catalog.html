@@ -10,7 +10,7 @@
 
 <body class="body">
 
-  <header class="header">
+  <header class="header--catalog">
     <div class="header__logo">
       <img class="header__logo-mobile" src="img/logo-icon-mobile.svg" width="34" height="38" alt="иконка кота">
       <a class="header__logo-cat-energy"><img src="img/logo-cat-energy.svg" width="101" height="18" alt="Cat Energy"></a>
@@ -18,7 +18,7 @@
       <a class="header__logo-desktop"><img src="img/logo-desktop.svg" width="202" height="59" alt="Cat Energy"></a>
     </div>
     <nav class="main-nav main-nav--catalog">
-      <button class="main-nav__close" type="button"><span class="visually-hidden">Закрыть</span></button>
+      <!-- <button class="main-nav__close" type="button"><span class="visually-hidden">Закрыть</span></button> -->
       <ul class="main-nav__list">
         <li class="main-nav__item"><a class="main-nav__link main-nav__link--catalog" href="index.html">главная</a></li>
         <li class="main-nav__item"><a class="main-nav__link main-nav__link--catalog main-nav__link--current" href="catalog.html">каталог продукции</a></li>
@@ -28,7 +28,7 @@
   </header>
 
   <main class="main catalog">
-    <div class="main__intro">
+    <div class="main__intro-catalog">
       <h1 class="main__title">Каталог продукции</h1>
       <!----------------------------------------     1  PRO 500 КУРИЦА     ---------------------------------------->
       <article class="catalog__item">
@@ -305,20 +305,13 @@
       <!----------------------------------------     ПОДАРОК     ---------------------------------------->
       <div class="catalog__present">
         <p class="catalog__text">Закажите все и&nbspполучите чехол для кота в подарок!</p>
-        <p class="catalog__picture">
-          <picture>
-            <source class="catalog__gift catalog__gift--desktop" media="(min-width: 1440px)" srcset="img/gift-photo-desktop.png 1x, img/gift-photo-desktop@2x.png 2x">
-            <source class="catalog__gift catalog__gift--tablet" media="(min-width: 768px)" srcset="img/gift-photo-tablet.png 1x, img/gift-photo-tablet@2x.png 2x">
-            <img class="catalog__gift catalog__gift--mob" src="gift-photo-mobile.png" srcset="img/gift-photo-mobile@2x.png 2x" alt="чехол для кота">
-          </picture>
-        </p>
       </div>
     </div>
 
     <!----------------------------------------     ПРИГЛАШЕНИЕ К СОТРУДНИЧЕСТВУ     ---------------------------------------->
     <section class="contacts">
       <h2 class="visually-hidden">Адрес и приглашение</h2>
-      <div class="contacts__info">
+      <div class="contacts__info contacts__info--catalog">
         <h3 class="contacts__inviting">Приглашаем к сотрудничеству дилеров!</h3>
         <p class="contacts__address contacts__address--full">ул.Большая Конюшевская, д.19/8 Санкт-Петербург</p>
         <div class="contacts__address-parts">

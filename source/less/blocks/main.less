@@ -64,7 +64,7 @@
   @media (min-resolution: 2dppx) {
     background-image: url("../img/can-mobile@2x.png");
 
-    /*outline: 5px dashed blue;*/
+    outline: 5px dashed blue;
   }
 }
 
@@ -131,15 +131,23 @@
   }
 
   .main__title--form {
-    width: 698px;
-    padding-left: 70px;
+    width: 100%;
+    font-size: 60px;
+    line-height: 60px;
+    padding-left: 0;
+    margin-top: 28px;
+    margin-bottom: 54px;
+    box-sizing: border-box;
   }
 
   .main__text {
-    width: 698px;
+    width: 100%;
     font-size: 20px;
     line-height: 30px;
-    padding-left: 70px;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 66px;
+    box-sizing: border-box;
   }
 
   .main__intro-major {
@@ -205,7 +213,11 @@
   }*/
 
   // Form.html //
-
+  .main__intro {
+    width: 630px;
+    box-sizing: border-box;
+    /*outline: 3px dashed green;*/
+  }
 }
 
 // ****************************************   DESCTOP   **************************************** //

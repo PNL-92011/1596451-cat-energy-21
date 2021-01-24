@@ -1,18 +1,24 @@
 .footer {
-  min-width: 280px;
+  min-width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
   background-color: @basic-grey;
   text-align: center;
 
-  /*outline: 5px solid green;
-  outline-offset: -5px;*/
+  outline: 5px solid green;
+  outline-offset: -5px;
 }
 
 .footer__logo {
-  width: 280px;
+  min-width: 100%;
   margin-top: 39px;
+  display: flex;
+  text-align: left;
+  align-items: center;
 
-  /*outline: 2px solid skyblue;
-  outline-offset: -2px;*/
+  outline: 2px solid skyblue;
+  outline-offset: -2px;
 }
 
 //  ****************************************   TABLET   ****************************************  //
@@ -31,8 +37,6 @@
   .footer__logo {
     min-width: 33.3%;
     margin-top: 0;
-    display: flex;
-    justify-content: start;
   }
 }
 

@@ -8,23 +8,22 @@
   outline-offset: -3px;*/
 }
 
-.main__intro-major {
+.main__title-wrapper {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 20px;
-  background: url("../img/promo.jpg") no-repeat;
-  /*background-size: contain;*/
-  /*background: linear-gradient(to bottom, fade(@basic-primary, 85%) 0, fade(@basic-primary, 85%) 302px, @basic-white 302px, @basic-white 100%), url("../img/cat-background-mobile.jpg") no-repeat 50% 0;*/
-  box-sizing: border-box;
+  background: url("../img/promo.jpg") no-repeat 50% 0;
+  /*background: linear-gradient (to bottom @basic-primary-extra 0, @basic-primary-extra 302px, @basic-white 302px, @basic-white 100%) url("../img/promo.jpg") no-repeat 50%;*/
 
   @media (min-resolution: 2dppx) {
-    background: url("../img/promo@2x.png") no-repeat;
+    background: url("../img/promo@2x.jpg") no-repeat;
   }
 
-  /* outline: 5px dashed blue;
+  /*outline: 2px solid blue;
   outline-offset: -5px;*/
 }
+
 
 .main__title-major {
   min-width: 250px;
@@ -63,8 +62,6 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/can-mobile@2x.png");
-
-    outline: 5px dashed blue;
   }
 }
 
@@ -93,7 +90,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  outline: 1px solid blue;
+  /*outline: 1px solid blue;*/
 
   &--form {
     padding-left: 0;
@@ -113,7 +110,7 @@
   margin-bottom: 37px;
   padding: 0;
 
-  outline: 1px solid blue;
+  /*outline: 1px solid blue;*/
 }
 
 // Catalog.html //
@@ -158,6 +155,10 @@
     padding-bottom: 47px;
     background: none;
     border-bottom: 1px solid @color-decor;
+  }
+
+  .main__title-wrapper {
+    background: none;
   }
 
   .main__title-major {
@@ -237,11 +238,11 @@
     padding-right: 0;
     margin-top: -141px;
     margin-left: 110px;
-    background: url("../img/header.png") no-repeat;
+    background: url("../img/header.jpg") no-repeat 50% 0;
     position: relative;
 
     @media (min-resolution: 2dppx) {
-      background: url("../img/header@2x.png") no-repeat;
+      background: url("../img/header@2x.jpg") no-repeat;
     }
   }
 

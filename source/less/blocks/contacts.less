@@ -14,10 +14,10 @@
 .contacts__info {
   display: flex;
   background-color: @basic-white;
-}
 
-.contacts__info--catalog {
-  background-color: @basic-grey;
+  &--catalog {
+    background-color: @basic-grey;
+  }
 }
 
 /* Как без <br> сделать правильное расположение слов по строкам? */
@@ -46,11 +46,12 @@
 
   /*outline: 4px solid orange;
   outline-offset: -4px;*/
-}
 
-.contacts__address--street,
-.contacts__address--town {
-  display: none;
+
+  &--street,
+  &--town {
+    display: none;
+  }
 }
 
 .contacts__map {
@@ -66,7 +67,11 @@
     margin-left: 0;
     align-items: center;
     justify-content: space-between;
-    background-color: @basic-grey;
+    background-color: @basic-white;
+
+    &--catalog {
+      background-color: @basic-grey;
+    }
   }
 
   .contacts__inviting {
@@ -107,7 +112,6 @@
       margin-top: 0;
       margin-left: auto;
       margin-right: auto;
-
       /*outline: 3px solid green;*/
     }
 

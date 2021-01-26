@@ -17,7 +17,7 @@
   margin-right: auto;
   padding-top: 20px;
   box-sizing: border-box;
-  background: url(../img/promo.jpg) no-repeat 50% 0, linear-gradient(to bottom, #62a53b 302px, transparent 302px);
+  background: url("../img/promo.jpg") no-repeat 50% 0, linear-gradient(to bottom, #62a53b 302px, transparent 302px);
 
   @media (min-resolution: 2dppx) {
     background: url(../img/promo@2x.jpg) no-repeat 50% 0, linear-gradient(to bottom, #62a53b 302px, transparent 302px);
@@ -202,10 +202,17 @@
   // Catalog.html //
   .main__intro-catalog {
     width: 100%;
-    margin-left: 0;
-    margin-right: 0;
     display: flex;
     flex-wrap: wrap;
+
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+
+    /*outline: 10px dashed green;
+    outline-offset: -10px;*/
   }
 
   /*.main__title {
@@ -290,11 +297,15 @@
 
   // Catalog.html //
   .main__intro-catalog {
-    width: 84.7%;
-    margin-left: 110px;
-    margin-right: 110px;
+    width: 100%;
+    padding-left: 110px;
+    padding-right: 110px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 0;
     justify-content: space-between;
+
+    /*outline: 4px solid skyblue;*/
   }
 
   //  Form.html  //

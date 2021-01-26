@@ -5,7 +5,7 @@
   margin-bottom: 25px;
   border-top: 1px solid @special-grey-3;
 
-  /* outline: 2px solid blue;
+  /*outline: 2px solid blue;
   outline-offset: -3px;*/
 
   &:last-child {
@@ -15,13 +15,17 @@
 }
 
 .catalog__wrapper {
-  display: flex;
+  display: block;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   padding-left: 20px;
   padding-right: 20px;
 
   /*outline: 2px solid red;*/
+}
+
+.catalog__wrap-ex {
+  display: flex;
 }
 
 .catalog__vary-image {
@@ -34,6 +38,7 @@
 
 .catalog__container {
   width: 50%;
+  margin-bottom: 22px;
   /*outline: 2px solid orange;*/
 }
 
@@ -76,7 +81,7 @@
   /* position: relative;*/
   /*outline: 1px solid blue;*/
 
-  &::after {
+ /* &::after {
     content: " ";
     position: absolute;
     width: 100vw;
@@ -84,7 +89,7 @@
     background-color: @basic-primary;
     top: 60%;
     left: calc((400px - 100vw) / 2);
-  }
+  }*/
 }
 
 .catalog__sub-name {
@@ -188,6 +193,7 @@
     margin-right: 30px;
     margin-top: 140px;
     margin-bottom: 0;
+    padding: 0;
     background-color: @basic-grey;
     position: relative;
     border-top: none;
@@ -198,6 +204,8 @@
   }
 
   .catalog__wrapper {
+    padding-left: 39px;
+    padding-right: 37px;
     margin-top: 161px;
     display: block;
   }
@@ -225,7 +233,7 @@
   }
 
   .catalog__heading {
-    width: 38%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     font-size: 20px;
@@ -364,7 +372,7 @@
 @media (min-width: @desktop-width) {
   .catalog__item {
     width: 20.1%;
-    height: 430px;
+   /* height: 430px;*/
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 0;

@@ -10,12 +10,12 @@
 
 <body class="body">
 
-  <header class="header">
+  <header class="header header--form cover">
     <div class="header__logo">
-      <img class="header__logo-mobile" src="img/logo-icon-mobile.svg" width="34" height="38" alt="иконка кота">
-      <a class="header__logo-cat-energy"><img src="img/logo-cat-energy.svg" width="101" height="18" alt="Cat Energy"></a>
-      <a class="header__logo-tablet"><img src="img/logo-tablet.svg" width="174" height="52" alt="Cat Energy"></a>
-      <a class="header__logo-desktop"><img src="img/logo-desktop.svg" width="202" height="59" alt="Cat Energy"></a>
+      <a href="index.html" class="header__logo-mobile"><img src="img/logo-icon-mobile.svg" width="34" height="38" alt="иконка кота"></a>
+      <a href="index.html" class="header__logo-cat-energy"><img src="img/logo-cat-energy.svg" width="101" height="18" alt="Cat Energy"></a>
+      <a href="index.html" class="header__logo-tablet"><img src="img/logo-tablet.svg" width="174" height="52" alt="Cat Energy"></a>
+      <a href="index.html" class="header__logo-desktop"><img src="img/logo-desktop.svg" width="202" height="59" alt="Cat Energy"></a>
     </div>
     <nav class="main-nav main-nav--catalog">
       <!-- <button class="main-nav__close" type="button"><span class="visually-hidden">Закрыть</span></button> -->
@@ -28,43 +28,45 @@
   </header>
 
   <main class="main">
-    <div class="main__intro">
+    <div class="main__intro cover">
       <h1 class="main__title main__title--form">Подбор программы</h1>
       <p class="main__text">Заполните анкету, и мы подберем <br>программу питания для вашего кота</p>
-      <form class="form" action="https://echo.htmlacademy.ru/" name="form" method="POST">
-        <!--  BLOCK NAME -->
-        <fieldset class="form__group form__group--name">
-          <div class="form__pair">
-            <label class="form__label" for="profile-name">ИМЯ:*</label>
-            <input class="form__text form__text--name" id="profile-name" type="text" placeholder="БАРСИК" required>
-          </div>
-          <div class="form__pair form__pair--name">
-            <label class="form__label" for="profile-weight">ВЕС (КГ):*</label>
-            <input class="form__text form__text--weight" id="profile-weight" type="text" placeholder="7" required>
-          </div>
-          <div class="form__pair">
-            <label class="form__label" for="profile-age">ВОЗРАСТ&nbsp;(ЛЕТ):</label>
-            <input class="form__text form__text--age" id="profile-age" type="text" placeholder="7" required>
-          </div>
-        </fieldset>
-        <!--  BLOCK RADIO -->
-        <fieldset class="form__group form__group--radio">
-          <div class="form__pair">
-            <input class="form__radio visually-hidden" id="corr-slim" type="radio" name="corr-slim" value="похудение" checked>
-            <span class="form__circlet"></span>
-            <label class="form__label form__label--radio" for="corr-slim">ПОХУДЕНИЕ</label>
-          </div>
-          <div class="form__pair form__pair--radio">
-            <input class="form__radio visually-hidden" id="corr-pro" type="radio" name="corr-slim" value="набор массы">
-            <span class="form__circlet"></span>
-            <label class="form__label form__label--radio" for="corr-pro">НАБОР МАССЫ</label>
-          </div>
-          <div class="form__pair">
-            <input class="form__radio visually-hidden" id="corr-none" type="radio" name="corr-slim" value="не знаю (нужен ваш совет)">
-            <span class="form__circlet"></span>
-            <label class="form__label form__label--radio" for="corr-none">НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)</label>
-          </div>
-        </fieldset>
+
+      <form class="form cover" action="https://echo.htmlacademy.ru/" name="form" method="POST">
+        <div class="form__couple">
+          <!--  BLOCK NAME -->
+          <fieldset class="form__group form__group--name">
+            <div class="form__pair">
+              <label class="form__label" for="profile-name">ИМЯ:*</label>
+              <input class="form__text form__text--name" id="profile-name" type="text" placeholder="БАРСИК" required>
+            </div>
+            <div class="form__pair form__pair--name">
+              <label class="form__label" for="profile-weight">ВЕС (КГ):*</label>
+              <input class="form__text form__text--weight" id="profile-weight" type="text" placeholder="7" required>
+            </div>
+            <div class="form__pair">
+              <label class="form__label" for="profile-age">ВОЗРАСТ&nbsp;(ЛЕТ):</label>
+              <input class="form__text form__text--age" id="profile-age" type="text" placeholder="7" required>
+            </div>
+          </fieldset>
+
+          <!--  BLOCK RADIO -->
+          <fieldset class="form__group form__group--radio">
+            <div class="form__pair">
+              <input class="form__radio visually-hidden" id="corr-slim" type="radio" name="corr-slim" value="похудение" checked>
+              <label class="form__label form__label--radio" for="corr-slim">ПОХУДЕНИЕ</label>
+            </div>
+            <div class="form__pair form__pair--radio">
+              <input class="form__radio visually-hidden" id="corr-pro" type="radio" name="corr-slim" value="набор массы">
+              <label class="form__label form__label--radio" for="corr-pro">НАБОР МАССЫ</label>
+            </div>
+            <div class="form__pair">
+              <input class="form__radio visually-hidden" id="corr-none" type="radio" name="corr-slim" value="не знаю (нужен ваш совет)">
+              <label class="form__label form__label--radio" for="corr-none">НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)</label>
+            </div>
+          </fieldset>
+        </div>
+
         <!--  EMAIL  PHONE -->
         <fieldset class="form__group form__group--contacts">
           <legend class="form__legend form__legend--contacts">Контактные данные (владельца кота)</legend>
@@ -77,6 +79,7 @@
             <input class="form__text form__text--phone" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
           </div>
         </fieldset>
+
         <!--  COMMENTS -->
         <fieldset class="form__group form__group--comments">
           <legend class="form__legend form__legend--comments">Комментарий</legend>
@@ -85,6 +88,7 @@
             <textarea class="form__textarea" id="comments" name="comments" rows="6">Расскажите обо всех повадках кота</textarea>
           </div>
         </fieldset>
+
         <!--  EXTRA -->
         <fieldset class="form__group form__group--extra">
           <legend class="form__legend form__legend--extra">Дополнительно</legend>
@@ -92,36 +96,35 @@
             <!--  сахарозаменитель -->
             <div class="form__pair form__pair--extra">
               <input class="form__checkbox visually-hidden" id="nosugar" type="checkbox" name="nosugar" checked>
-              <span class="form__box"></span>
               <label class="form__label form__label--checkbox" for="nosugar">сахарозаменитель</label>
             </div>
             <!--  питьевая вода -->
             <div class="form__pair form__pair--extra">
               <input class="form__checkbox visually-hidden" id="water" type="checkbox" name="water">
-              <span class="form__box"></span>
               <label class="form__label form__label--checkbox" for="water">питьевая вода</label>
             </div>
             <!--  молоко -->
             <div class="form__pair form__pair--extra">
               <input class="form__checkbox visually-hidden" id="milk" type="checkbox" name="milk">
-              <span class="form__box"></span>
               <label class="form__label form__label--checkbox" for="milk">молоко</label>
             </div>
             <!--  витамины -->
-            <div class="form__pair form__pair--vitamins">
+            <div class="form__pair form__pair--extra">
               <input class="form__checkbox visually-hidden" id="vitamins" type="checkbox" name="vitamins">
-              <span class="form__box"></span>
               <label class="form__label form__label--checkbox" for="vitamins">витамины</label>
             </div>
           </div>
         </fieldset>
+
         <div class="form__final">
           <button class="button button--form" type="submit">отправить заявку</button>
           <p class="form__small"> <small>* - Oбязательные поля </small></p>
         </div>
+
       </form>
     </div>
-    <section class="contacts contacts--form">
+
+    <section class="contacts contacts--form cover">
       <h2 class="visually-hidden">Адрес и приглашение</h2>
       <div class="contacts__info contacts__info--catalog">
         <h3 class="contacts__inviting">Приглашаем к сотрудничеству дилеров!</h3>
@@ -135,7 +138,7 @@
     </section>
   </main>
 
-  <footer class="footer footer--form">
+  <footer class="footer footer--form cover">
     <span class="footer__logo"><img src="img/logo-cat-energy.svg" width="128" height="24" alt="Cat Energy"></span>
     <ul class="social social--form">
       <li class="social__item social__item--form"><a class="social__link" href="https://vk.com/htmlacademy"><span class="visually-hidden">ВКОНТАКТЕ</span><svg class="social__icon" width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">

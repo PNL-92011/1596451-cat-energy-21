@@ -124,7 +124,7 @@
 @media (min-width: @tablet-width) {
   .example {
     /*background-color: @basic-white;*/
-    background: linear-gradient(to bottom, @basic-white 0, @basic-white 619px, @bg-example 619px, @bg-example 100%);
+    background: linear-gradient(to bottom, @basic-white 0, @basic-white 550px, @bg-example 550px, @bg-example 100%);
   }
 
   .example__title {
@@ -200,8 +200,9 @@
     display: none;
   }
 
-  .example__rigth {
+  .example__right {
     position: relative;
+    /* outline: 6px solid green;*/
   }
 
   .example__cat-before {
@@ -211,10 +212,6 @@
   .example__cat-halfs {
     display: flex;
     justify-content: center;
-    position: relative;
-
-    /*outline: 5px dashed green;
-    outline-offset: -5px;*/
   }
 
   .example__fat-half-desktop,
@@ -297,19 +294,8 @@
 
   .example__cat-halfs {
     padding-right: 60px;
-  }
 
-  .example__fat-half-desktop,
-  .example__thin-half-desktop {
-    display: block;
-  }
-
-  .example__fat-half-tablet,
-  .example__thin-half-tablet {
-    display: none;
-  }
-
-  .example__thin-half-desktop {
-    margin-left: -40px;
+    /*outline: 2px solid red;
+    box-sizing: border-box;*/
   }
 }

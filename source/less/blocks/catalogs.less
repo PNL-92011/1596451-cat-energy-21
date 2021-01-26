@@ -5,7 +5,7 @@
   margin-bottom: 25px;
   border-top: 1px solid @special-grey-3;
 
-  /* outline: 2px solid blue;
+  /*outline: 2px solid blue;
   outline-offset: -3px;*/
 
   &:last-child {
@@ -15,13 +15,17 @@
 }
 
 .catalog__wrapper {
-  display: flex;
+  display: block;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   padding-left: 20px;
   padding-right: 20px;
 
   /*outline: 2px solid red;*/
+}
+
+.catalog__wrap-ex {
+  display: flex;
 }
 
 .catalog__vary-image {
@@ -34,6 +38,7 @@
 
 .catalog__container {
   width: 50%;
+  margin-bottom: 22px;
   /*outline: 2px solid orange;*/
 }
 
@@ -69,29 +74,42 @@
   line-height: 24px;
   text-align: left;
   color: @basic-black;
-  width: 250px;
+  width: auto;
   margin-left: 5.9%;
   margin-top: 25px;
   margin-bottom: 36px;
-  position: relative;
+  /* position: relative;*/
   /*outline: 1px solid blue;*/
 
-  &::after {
+  /* &::after {
     content: " ";
     position: absolute;
-    // изменить длину декоративной линии //
-    width: 15%;
-    height: 1px;
-    border: 1px solid @basic-primary;
+    width: 100vw;
+    height: 2px;
+    background-color: @basic-primary;
     top: 60%;
-    left: 100%;
-  }
+    left: calc((400px - 100vw) / 2);
+  }*/
 }
 
+.catalog__sub-name {
+  background-color: @basic-white;
+  position: relative;
+  padding-left: 0;
+  padding-right: 20px;
+  margin-right: 20px;
+  /*outline: 1px solid blue;*/
+}
+
+
 .catalog__intro-catalog {
-  width: 87.5%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+
   /*outline: 4px dashed green;
   outline-offset: -4px*/
 }
@@ -125,9 +143,8 @@
   display: flex;
   width: 100%;
   height: 289px;
-  background-image: url("../img/gift-photo-mobile.png");
-  background-repeat: no-repeat;
-  background-size: contain;
+  background: @basic-primary url("../img/gift-photo-mobile.png") no-repeat 50%;
+
   margin-top: 39px;
   margin-bottom: 35px;
   margin-left: auto;
@@ -179,6 +196,7 @@
     margin-right: 30px;
     margin-top: 140px;
     margin-bottom: 0;
+    padding: 0;
     background-color: @basic-grey;
     position: relative;
     border-top: none;
@@ -189,7 +207,10 @@
   }
 
   .catalog__wrapper {
+    padding-left: 39px;
+    padding-right: 37px;
     margin-top: 161px;
+    margin-bottom: 0;
     display: block;
   }
 
@@ -213,14 +234,18 @@
   .catalog__container {
     width: 100%;
     text-align: center;
+    margin-bottom: 0;
+    margin-top: -10px;
   }
 
   .catalog__heading {
-    width: 38%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     font-size: 20px;
     line-height: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
     /*outline: 2px solid red;*/
   }
 
@@ -259,30 +284,31 @@
     background-color: @basic-white;
     /*outline: 2px solid red;*/
 
-    &::before {
+    /*&::before {
       content: " ";
       position: absolute;
       width: 10%;
       height: 1px;
       border: 1px solid @basic-primary;
       top: 60%;
-      left: -10.5%;
-    }
+      left: calc((1000px - 100vw) / 2);
+      z-index: 11;
+    }*/
   }
 
   .catalog__intro-catalog {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .catalog__item--extra {
-    width: 92%;
+    width: 100%;
     background-color: @basic-white;
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
 
     padding-top: 26px;
     border: 1px solid @special-grey;
@@ -319,9 +345,9 @@
 
   // Подарок //
   .catalog__present {
-    width: 92.3%;
+    width: 100%;
     height: 200px;
-    background-image: url("../img/gift-photo-tablet.png");
+    background: @basic-primary url("../img/gift-photo-tablet.png") no-repeat 50%;
     margin: 0 30px;
     margin-top: 69px;
     margin-bottom: 76px;
@@ -354,7 +380,7 @@
 @media (min-width: @desktop-width) {
   .catalog__item {
     width: 20.1%;
-    height: 430px;
+    /* height: 430px;*/
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 0;
@@ -364,6 +390,14 @@
       margin-bottom: 0;
       /*border-bottom: none;*/
     }
+  }
+
+  .catalog__container {
+    margin-bottom: 0;
+  }
+
+  .catalog__wrapper {
+    margin-bottom: 0;
   }
 
   .catalog__heading {
@@ -387,39 +421,47 @@
 
   // Дополнительные товары //
   .catalog__intro-catalog {
+    width: 100%;
+    padding-left: 110px;
+    padding-right: 110px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+
     display: flex;
+    justify-content: space-between;
     margin-bottom: 86px;
-    /*outline: 2px dashed purple;
-    outline-offset: -2px;*/
+
+    outline: 5px dashed purple;
+    outline-offset: -2px;
   }
 
   .catalog__subtitle {
     margin-top: 75px;
     margin-bottom: 81px;
     margin-left: 70px;
+    text-align: left;
+    padding-left: 40px;
 
-    &::after {
-      // изменить длину декоративной линии //
+    /*&::after {
       width: 150%;
-    }
-
-    &::before {
-      width: 20%;
-      left: -20.5%;
-    }
+    }*/
   }
 
   .catalog__item--extra {
     width: 895px;
     height: 72px;
-    margin-left: 110px;
+    margin-left: 0;
     margin-right: 0;
     padding-top: 0;
     display: flex;
     justify-content: start;
-    align-items: center;
+    align-items: baseline;
     border: none;
     border-top: 1px solid @special-grey;
+
+    outline: 1px solid rgb(235, 100, 212);
+    outline-offset: -1px;
 
     &-vit {
       padding-bottom: 0;
@@ -451,7 +493,9 @@
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 80px;
-    margin-right: 110px;
+    margin-right: 0;
+
+    outline: 2px solid red;
 
     &::after {
       width: 80px;

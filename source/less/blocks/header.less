@@ -1,24 +1,32 @@
 .header {
-  min-width: 320px;
+  min-width: 100%;
   margin-left: auto;
   margin-right: auto;
   background-color: @basic-white;
+  border-bottom: 1px solid @special-light-grey;
 
   /*outline: 2px solid red;
     outline-offset: -2px;*/
+
+  &--catalog,
+  &--form {
+    border-bottom: 1px solid @special-light-grey;
+  }
 }
 
 .header__logo {
-  width: 87.5%;
+  width: 100%;
   height: 65px;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid @special-light-grey;
 
-  /*outline: 4px dashed green;
-    outline-offset: -4px;*/
+  /* outline: 4px dashed green;
+  outline-offset: -4px;*/
 }
 
 .header__logo-tablet,
@@ -31,14 +39,24 @@
   .header {
     width: 100%;
     height: 113px;
+    border-bottom: none;
     display: flex;
     justify-content: space-between;
+
+    &--catalog,
+    &--form {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: none;
+    }
   }
 
   .header__logo {
     width: 23%;
     height: 108px;
     margin-left: 30px;
+    border-bottom: none;
   }
 
   .header__logo-mobile,
@@ -49,6 +67,7 @@
 
   .header__logo-tablet {
     display: block;
+    border-bottom: none;
   }
 }
 
@@ -57,17 +76,22 @@
   .header {
     height: 90px;
     padding-top: 70px;
-  }
 
-  .header--index {
-    width: 100%;
-    height: 140px;
-    padding-top: 0;
-  }
+    &--index {
+      width: 100%;
+      height: 140px;
+      padding-top: 0;
+    }
 
-  .header--catalog {
-    height: 188px;
-    display: flex;
+    &--catalog {
+      height: 188px;
+      display: flex;
+    }
+
+    &--form {
+      padding-top: 0;
+      display: flex;
+    }
   }
 
   .header__logo {
@@ -75,10 +99,7 @@
     margin-left: 110px;
     margin-right: 0;
     justify-content: start;
-  }
-
-  .header__logo-mobile {
-    margin-right: 35px;
+    z-index: 5;
   }
 
   .header__logo-mobile,
@@ -90,9 +111,8 @@
   .header__logo-desktop {
     display: block;
     margin-top: 65px;
+    z-index: 10;
+
+    /*outline: 1px solid green;*/
   }
-
-  // Catalog.html //
-
-  // Form.html //
 }

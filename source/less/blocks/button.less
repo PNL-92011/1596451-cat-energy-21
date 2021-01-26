@@ -14,15 +14,15 @@
   text-decoration: none;
   text-transform: uppercase;
   border: none;
-}
 
-.button--more {
-  color: @special-dark-grey;
-  background-color: @basic-grey;
-}
+  &--more {
+    color: @special-dark-grey;
+    background-color: @basic-grey;
+  }
 
-.button--extra {
-  width: 100%;
+  &--extra {
+    width: 100%;
+  }
 }
 
 // ****************************************   TABLET   **************************************** //
@@ -35,37 +35,38 @@
     position: absolute;
     top: 370px;
     left: 14.5%;
-  }
 
-  // Catalog.html //
-  .button--catalog {
-    width: 248px;
-    height: 39px;
-    margin-bottom: 40px;
-    position: static;
-  }
+    // Catalog.html //
+    &--catalog {
+      width: 248px;
+      height: 39px;
+      margin-bottom: 40px;
+      position: static;
+    }
 
-  .button--extra {
-    width: 89.3%;
-    margin-top: 28px;
-    margin-bottom: 28px;
-  }
+    &--extra {
+      width: 89.3%;
+      margin-top: 28px;
+      margin-bottom: 28px;
+    }
 
-  .button--more {
-    width: 249px;
-    height: 40px;
-    margin-bottom: 0;
-  }
+    &--more {
+      width: 249px;
+      height: 40px;
+      margin-bottom: 0;
+      /* margin-top: 1px;*/
+    }
 
-  // Form.html //
-  .button--form {
-    width: 282px;
-    height: 52px;
-    font-size: 20px;
-    position: static;
-    padding: 0;
-    margin-left: 0;
-    margin-right: 61px;
+    // Form.html //
+    &--form {
+      width: 282px;
+      height: 52px;
+      font-size: 20px;
+      position: static;
+      padding: 0;
+      margin-left: 0;
+      margin-right: 61px;
+    }
   }
 }
 
@@ -78,29 +79,46 @@
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
-  }
 
-  .button--index-desktop {
-    position: absolute;
-    top: 455px;
-    left: 80px;
-  }
+    &--index-desktop {
+      position: absolute;
+      top: 455px;
+      left: 80px;
+    }
 
-  .button--more {
-    width: 69%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 87px;
-    margin-bottom: 0;
-  }
+    &--more {
+      width: 69%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 87px;
+      margin-bottom: 0;
+    }
 
-  // Дополнительные товары //
-  .button--extra {
-    width: 244px;
-    font-size: 16px;
-    margin-top: 15px;
-    margin-bottom: 17px;
-    margin-left: 38px;
-    margin-right: 0;
+    // Дополнительные товары //
+    &--extra {
+      width: 244px;
+      font-size: 16px;
+      margin-top: 15px;
+      margin-bottom: 17px;
+      margin-left: 38px;
+      margin-right: 0;
+    }
+
+    // Catalog.html //
+    &--catalog {
+      width: 100%;
+      height: 39px;
+      margin-bottom: 40px;
+      position: static;
+    }
+
+    // Form.html //
+    &--form {
+      width: 568px;
+      height: 52px;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 82px;
+    }
   }
 }

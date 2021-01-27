@@ -30,9 +30,11 @@
     margin-left: auto;
     margin-right: auto;
     background: url("../img/can-mobile.png") no-repeat 50% 0;
+    background-size: 280px 270px;
     position: absolute;
     top: 440px;
-    left: 6%;
+    left: 50%;
+    transform: translateX(-50%);
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/can-mobile@2x.png");
@@ -168,8 +170,9 @@
       width: 709px;
       height: 609px;
       background: url("../img/can-tablet.png") no-repeat;
+      background-size: 709px 609px;
       margin-top: -100px;
-      left: 30px;
+      left: 50%;
 
       @media (min-resolution: 2dppx) {
         background: url("../img/can-tablet@2x.png") no-repeat;
@@ -263,8 +266,10 @@
     width: 552px;
     height: 499px;
     background: url("../img/can-desktop.png") no-repeat;
+    background-size: 552px 499px;
     top: 240px;
-    left: 450px;
+    /*left: 450px;*/
+    left: 55%;
 
     @media (min-resolution: 2dppx) {
       background: url("../img/can-desktop@2x.png") no-repeat;

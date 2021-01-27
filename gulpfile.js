@@ -34,7 +34,7 @@ exports.styles = styles;
 
 // Images
 const images = () => {
-  return gulp.src("sourсe/img/**/*.{jpg,png,svg}")
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
       imagemin.mozjpeg({
         progressive: true
@@ -164,7 +164,7 @@ exports.default = gulp.series(
   ));
 
 
-  // Reload
+// Reload
 const reload = done => {
   sync.reload();
   done();

@@ -78,18 +78,19 @@
   margin-left: 5.9%;
   margin-top: 25px;
   margin-bottom: 36px;
-  /* position: relative;*/
-  /*outline: 1px solid blue;*/
+  position: relative;
 
-  /* &::after {
+  &::after {
     content: " ";
     position: absolute;
-    width: 100vw;
+    width: 50vw;
     height: 2px;
     background-color: @basic-primary;
     top: 60%;
-    left: calc((400px - 100vw) / 2);
-  }*/
+    left: 50%;
+    overflow: hidden;
+    z-index: 4;
+  }
 }
 
 .catalog__sub-name {
@@ -98,7 +99,7 @@
   padding-left: 0;
   padding-right: 20px;
   margin-right: 20px;
-  /*outline: 1px solid blue;*/
+  z-index: 5;
 }
 
 
@@ -243,7 +244,7 @@
     margin-left: auto;
     margin-right: auto;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 21px;
     margin-top: 0;
     margin-bottom: 0;
     /*outline: 2px solid red;*/
@@ -272,11 +273,17 @@
   }
 
   // Дополнительные товары //
+  .catalog__intro-catalog {
+    max-width: 1000px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   .catalog__subtitle {
-    width: 411px;
+    width: 441px;
     font-size: 36px;
     line-height: 36px;
-    margin-left: 37px;
+    margin-left: 0;
     margin-top: 68px;
     margin-bottom: 80px;
     text-align: center;
@@ -284,21 +291,25 @@
     background-color: @basic-white;
     /*outline: 2px solid red;*/
 
-    /*&::before {
+    &::after {
       content: " ";
       position: absolute;
-      width: 10%;
-      height: 1px;
-      border: 1px solid @basic-primary;
+      width: 100vw;
+      height: 2px;
+      background-color: @basic-primary;
       top: 60%;
-      left: calc((1000px - 100vw) / 2);
-      z-index: 11;
-    }*/
+      /*left: calc((1000px - 100vw) / 2);*/
+      left: 0;
+      overflow: hidden;
+    }
   }
 
-  .catalog__intro-catalog {
-    padding-left: 30px;
-    padding-right: 30px;
+  .catalog__sub-name {
+    padding-left: 37px;
+    padding-right: 36px;
+    margin-left: 30px;
+
+    /*background-color: yellow;*/
   }
 
   .catalog__item--extra {
@@ -369,7 +380,7 @@
   }
 
   .catalog__text {
-    text-align: start;
+    text-align: left;
     margin-left: 60%;
     margin-top: -95px;
     /*outline: 1px solid red;*/
@@ -421,31 +432,37 @@
 
   // Дополнительные товары //
   .catalog__intro-catalog {
-    width: 100%;
+    max-width: 1600px;
     padding-left: 110px;
     padding-right: 110px;
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
-
     display: flex;
     justify-content: space-between;
     margin-bottom: 86px;
-
-    outline: 5px dashed purple;
-    outline-offset: -2px;
   }
 
   .catalog__subtitle {
+    width: 445px;
     margin-top: 75px;
     margin-bottom: 81px;
     margin-left: 70px;
     text-align: left;
     padding-left: 40px;
 
-    /*&::after {
-      width: 150%;
-    }*/
+    &::after {
+      width: 100vw;
+      height: 2px;
+      top: 60%;
+      /*left: calc((1600px - 100vw) / 2);*/
+      left: -15%
+    }
+  }
+
+  .catalog__sub-name {
+    padding-left: 40px;
+    padding-right: 35px;
   }
 
   .catalog__item--extra {
@@ -455,13 +472,10 @@
     margin-right: 0;
     padding-top: 0;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: baseline;
     border: none;
     border-top: 1px solid @special-grey;
-
-    outline: 1px solid rgb(235, 100, 212);
-    outline-offset: -1px;
 
     &-vit {
       padding-bottom: 0;
@@ -475,7 +489,7 @@
     margin-right: 0;
     margin-top: 0;
     padding-top: 0;
-    justify-content: start;
+    justify-content: flex-start;
   }
 
   .catalog__vary-name--extra {
@@ -495,19 +509,22 @@
     margin-left: 80px;
     margin-right: 0;
 
-    outline: 2px solid red;
-
     &::after {
       width: 80px;
       height: 83px;
       left: 34%;
     }
 
-    .catalog__text {
-      text-align: center;
-      left: -107px;
-      top: 280px;
-      /*outline: 2px solid red;*/
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.png");
     }
+  }
+
+  .catalog__text {
+    text-align: center;
+    left: -107px;
+    top: 280px;
+    /*outline: 2px solid red;*/
   }
 }

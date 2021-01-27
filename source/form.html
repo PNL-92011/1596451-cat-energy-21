@@ -11,26 +11,30 @@
 <body class="body">
 
   <header class="header header--form cover">
-    <div class="header__logo">
-      <a href="index.html" class="header__logo-mobile"><img src="img/logo-icon-mobile.svg" width="34" height="38" alt="иконка кота"></a>
-      <a href="index.html" class="header__logo-cat-energy"><img src="img/logo-cat-energy.svg" width="101" height="18" alt="Cat Energy"></a>
-      <a href="index.html" class="header__logo-tablet"><img src="img/logo-tablet.svg" width="174" height="52" alt="Cat Energy"></a>
-      <a href="index.html" class="header__logo-desktop"><img src="img/logo-desktop.svg" width="202" height="59" alt="Cat Energy"></a>
-    </div>
+    <a class="header__logo" href="index.html">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="202" height="59">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="52">
+        <img src="img/logo-menu-mob.svg" alt="Cat Energy">
+      </picture>
+    </a>
+
     <nav class="main-nav main-nav--catalog">
-      <!-- <button class="main-nav__close" type="button"><span class="visually-hidden">Закрыть</span></button> -->
+      <button class="main-nav__close" type="button"><span class="visually-hidden">Закрыть</span></button>
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a class="main-nav__link main-nav__link--catalog" href="index.html">главная</a></li>
-        <li class="main-nav__item"><a class="main-nav__link main-nav__link--catalog" href="catalog.html">каталог продукции</a></li>
-        <li class="main-nav__item"><a class="main-nav__link main-nav__link--catalog  main-nav__link--current" href="form.html">подбор программы</a></li>
+        <li class="main-nav__item"><a class="main-nav__link main-nav__link--form" href="index.html">главная</a></li>
+        <li class="main-nav__item"><a class="main-nav__link main-nav__link--form" href="catalog.html">каталог продукции</a></li>
+        <li class="main-nav__item"><a class="main-nav__link main-nav__link--form  main-nav__link--current" href="form.html">подбор программы</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="main">
-    <div class="main__intro cover">
-      <h1 class="main__title main__title--form">Подбор программы</h1>
-      <p class="main__text">Заполните анкету, и мы подберем <br>программу питания для вашего кота</p>
+    <div class="main__intro">
+      <div class="cover">
+        <h1 class="main__title main__title--form">Подбор программы</h1>
+        <p class="main__text">Заполните анкету, и мы подберем <br>программу питания для вашего кота</p>
+      </div>
 
       <form class="form cover" action="https://echo.htmlacademy.ru/" name="form" method="POST">
         <div class="form__couple">
@@ -118,13 +122,13 @@
 
         <div class="form__final">
           <button class="button button--form" type="submit">отправить заявку</button>
-          <p class="form__small"> <small>* - Oбязательные поля </small></p>
+          <p class="form__small">* - Oбязательные поля</p>
         </div>
 
       </form>
     </div>
 
-    <section class="contacts contacts--form cover">
+    <section class="contacts contacts--form">
       <h2 class="visually-hidden">Адрес и приглашение</h2>
       <div class="contacts__info contacts__info--catalog">
         <h3 class="contacts__inviting">Приглашаем к сотрудничеству дилеров!</h3>
@@ -138,7 +142,7 @@
     </section>
   </main>
 
-  <footer class="footer footer--form cover">
+  <footer class="footer footer--form">
     <span class="footer__logo"><img src="img/logo-cat-energy.svg" width="128" height="24" alt="Cat Energy"></span>
     <ul class="social social--form">
       <li class="social__item social__item--form"><a class="social__link" href="https://vk.com/htmlacademy"><span class="visually-hidden">ВКОНТАКТЕ</span><svg class="social__icon" width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">

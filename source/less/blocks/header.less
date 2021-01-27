@@ -1,12 +1,13 @@
 .header {
-  min-width: 100%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   background-color: @basic-white;
   border-bottom: 1px solid @special-light-grey;
+  position: relative;
 
   /*outline: 2px solid red;
-    outline-offset: -2px;*/
+  outline-offset: -1px;*/
 
   &--catalog,
   &--form {
@@ -21,11 +22,13 @@
   padding-right: 20px;
   box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   border-bottom: 1px solid @special-light-grey;
+  margin-right: auto;
+  margin-left: auto;
 
-  /* outline: 4px dashed green;
+  /*outline: 4px dashed green;
   outline-offset: -4px;*/
 }
 
@@ -96,9 +99,10 @@
 
   .header__logo {
     width: 50%;
-    margin-left: 110px;
+    padding-left: 110px;
+    margin-left: 0;
     margin-right: 0;
-    justify-content: start;
+    justify-content: flex-start;
     z-index: 5;
   }
 

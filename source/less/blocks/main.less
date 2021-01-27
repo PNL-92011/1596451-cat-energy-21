@@ -17,10 +17,12 @@
   margin-right: auto;
   padding-top: 20px;
   box-sizing: border-box;
-  background: url("../img/promo.jpg") no-repeat 50% 0, linear-gradient(to bottom, #62a53b 302px, transparent 302px);
+  background: url("../img/promo.jpg") no-repeat 50% 0, linear-gradient(to bottom, @basic-primary-extra 302px, transparent 302px);
+  background-size: 320px 302px;
 
   @media (min-resolution: 2dppx) {
-    background: url(../img/promo@2x.jpg) no-repeat 50% 0, linear-gradient(to bottom, #62a53b 302px, transparent 302px);
+    background: url(../img/promo@2x.jpg) no-repeat 50% 0, linear-gradient(to bottom, @basic-primary-extra 302px, transparent 302px);
+    background-size: 320px 302px;
   }
 
   &::before {
@@ -30,12 +32,15 @@
     margin-left: auto;
     margin-right: auto;
     background: url("../img/can-mobile.png") no-repeat 50% 0;
+    background-size: 280px 270px;
     position: absolute;
     top: 440px;
-    left: 6%;
+    left: 50%;
+    transform: translateX(-50%);
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/can-mobile@2x.png");
+      background-size: 280px 270px;
     }
   }
 }
@@ -167,12 +172,14 @@
       content: " ";
       width: 709px;
       height: 609px;
-      background: url("../img/can-tablet.png") no-repeat;
+      background: url("../img/can-tablet.png") no-repeat 50%;
+      background-size: 709px 609px;
       margin-top: -100px;
-      left: 30px;
+      left: 50%;
 
       @media (min-resolution: 2dppx) {
-        background: url("../img/can-tablet@2x.png") no-repeat;
+        background: url("../img/can-tablet@2x.png") no-repeat 50%;
+        background-size: 709px 609px;
 
         /*outline: 5px dashed blue;*/
       }
@@ -245,29 +252,36 @@
   }
 
   .main__intro-heading {
+    width: 100%;
     height: 694px;
     padding-left: 0;
     padding-right: 0;
     margin-top: -141px;
-    margin-left: 110px;
-    background: url("../img/header.jpg") no-repeat 50% 0;
+    margin-left: 0;
+    background: url("../img/header-1.jpg") no-repeat 100%;
+    background-size: 720px 694px;
     position: relative;
 
     @media (min-resolution: 2dppx) {
-      background: url("../img/header@2x.jpg") no-repeat;
+      background: url("../img/header@2x.jpg") no-repeat 100%;
+      background-size: 720px 694px;
     }
+
+    /*outline: 3px dashed green;*/
   }
 
   .main__title-wrapper::before {
     content: " ";
     width: 552px;
     height: 499px;
-    background: url("../img/can-desktop.png") no-repeat;
+    background: url("../img/can-desktop.png") no-repeat 50%;
+    background-size: 552px 499px;
     top: 240px;
-    left: 450px;
+    left: 53%;
 
     @media (min-resolution: 2dppx) {
       background: url("../img/can-desktop@2x.png") no-repeat;
+      background-size: 552px 499px;
     }
   }
 
@@ -275,7 +289,7 @@
     font-size: 60px;
     line-height: 60px;
     color: @basic-black;
-    text-align: start;
+    text-align: left;
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 0;

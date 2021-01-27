@@ -35,8 +35,17 @@
   outline-offset: -2px;*/
 }
 
+.contacts__address-parts {
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+  outline: 3px dashed green;
+  outline-offset: -3px;
+}
+
 .contacts__address {
-  width: 43.8%;
+  width: 100%;
   font-family: @arial;
   font-size: 14px;
   line-height: 20px;
@@ -44,14 +53,8 @@
   text-transform: none;
   margin-right: 19px;
 
-  /*outline: 4px solid orange;
-  outline-offset: -4px;*/
-
-
-  &--street,
-  &--town {
-    display: none;
-  }
+  outline: 1px solid red;
+  outline-offset: -1px;
 }
 
 .contacts__map {
@@ -83,21 +86,18 @@
     margin-right: 0;
   }
 
-  .contacts__address--full {
-    display: none;
+  .contacts__address {
+    font-size: 16px;
   }
 
   .contacts__address-parts {
     width: 159px;
-    text-align: end;
+    text-align: right;
     margin-right: 72px;
   }
 
-  .contacts__address--street,
   .contacts__address--town {
-    width: 100%;
-    display: block;
-    font-size: 16px;
+    margin-top: 20px;
   }
 
   .contacts__map {
@@ -113,10 +113,6 @@
       margin-left: auto;
       margin-right: auto;
       /*outline: 3px solid green;*/
-    }
-
-    &__address {
-      font-size: 16px;
     }
   }
 }
@@ -145,7 +141,7 @@
 
   .contacts__address-parts {
     width: 159px;
-    text-align: start;
+    text-align: left;
     margin-right: 89px;
   }
 }

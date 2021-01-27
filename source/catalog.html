@@ -11,14 +11,16 @@
 <body class="body">
 
   <header class="header header--catalog cover">
-    <div class="header__logo">
-      <a href="index.html" class="header__logo-mobile"><img src="img/logo-icon-mobile.svg" width="34" height="38" alt="иконка кота"></a>
-      <a href="index.html" class="header__logo-cat-energy"><img src="img/logo-cat-energy.svg" width="101" height="18" alt="Cat Energy"></a>
-      <a href="index.html" class="header__logo-tablet"><img src="img/logo-tablet.svg" width="174" height="52" alt="Cat Energy"></a>
-      <a href="index.html" class="header__logo-desktop"><img src="img/logo-desktop.svg" width="202" height="59" alt="Cat Energy"></a>
-    </div>
+    <a class="header__logo" href="index.html">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="202" height="59">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="52">
+        <img src="img/logo-menu-mob.svg" alt="Cat Energy">
+      </picture>
+    </a>
+
     <nav class="main-nav main-nav--catalog">
-      <!-- <button class="main-nav__close" type="button"><span class="visually-hidden">Закрыть</span></button> -->
+      <button class="main-nav__close" type="button"><span class="visually-hidden">Закрыть</span></button>
       <ul class="main-nav__list">
         <li class="main-nav__item"><a class="main-nav__link main-nav__link--catalog" href="index.html">главная</a></li>
         <li class="main-nav__item"><a class="main-nav__link main-nav__link--catalog main-nav__link--current" href="catalog.html">каталог продукции</a></li>
@@ -338,9 +340,9 @@
     </section>
 
     <!----------------------------------------     ПРИГЛАШЕНИЕ К СОТРУДНИЧЕСТВУ     ---------------------------------------->
-    <section class="contacts cover">
+    <section class="contacts">
       <h2 class="visually-hidden">Адрес и приглашение</h2>
-      <div class="contacts__info contacts__info--catalog">
+      <div class="contacts__info contacts__info--catalog cover">
         <h3 class="contacts__inviting">Приглашаем к сотрудничеству дилеров!</h3>
         <p class="contacts__address contacts__address--full">ул.Большая Конюшевская, д.19/8 Санкт-Петербург</p>
         <div class="contacts__address-parts">
@@ -352,7 +354,7 @@
     </section>
   </main>
 
-  <footer class="footer cover">
+  <footer class="footer">
     <span class="footer__logo"><img src="img/logo-cat-energy.svg" width="128" height="24" alt="Cat Energy"></span>
     <ul class="social">
       <li class="social__item"><a class="social__link" href="https://vk.com/htmlacademy"><span class="visually-hidden">ВКОНТАКТЕ</span><svg class="social__icon" width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">

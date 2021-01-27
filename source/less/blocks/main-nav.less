@@ -35,26 +35,28 @@
   color: fade(@basic-black, 80%);
 }
 
-/*
-.main-nav__close {
-  position: relative;
-  margin-top: 0;
-  margin-left: 250px;
-  /*background-color: transparent;
-  border: 0;
-  background-color: red;
-}*/
 
-/*.main-nav__close::before,
+.main-nav__close {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  margin-top: -50px;
+  margin-left: 85%;
+  background-color: transparent;
+  border: 0;
+  background-color: @basic-white;
+}
+
+
+.main-nav__close::before,
 .main-nav__close::after {
   content: " ";
   position: absolute;
-  width: 23px;
-  height: 0;
-  border: 1px solid @basic-black;
-  top: 0;
+  width: 25px;
+  height: 1px;
+  top: 50%;
   left: 0;
-  background-color: black;
+  background-color: @basic-black;
 }
 
 .main-nav__close::before {
@@ -63,7 +65,7 @@
 
 .main-nav__close::after {
   transform: rotate(-45deg);
-}*/
+}
 
 //  ****************************************   TABLET   ****************************************  //
 @media (min-width: @tablet-width) {
@@ -89,16 +91,17 @@
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
+    padding-bottom: 6px;
   }
 
   .main-nav__link--current {
     border-bottom: 2px solid @basic-primary;
   }
 
-  .main-nav__link-form {
+  .main-nav__link--form {
     font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
     text-transform: uppercase;
     color: @basic-black;
   }
@@ -111,11 +114,19 @@
 // ****************************************   DESCTOP   **************************************** //
 @media (min-width: @desktop-width) {
   .main-nav {
+    /*max-width: 720px;*/
     width: 50%;
-    margin-left: 0;
-    margin-right: 110px;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 110px;
+    padding-left: 0;
     margin-top: 0;
     z-index: 5;
+    box-sizing: border-box;
+
+    outline: 2px solid blue;
+  outline-offset: -2px;
   }
 
   .main-nav__item:first-child {
@@ -129,6 +140,7 @@
   .main-nav__link {
     font-size: 20px;
     line-height: 30px;
+    padding-bottom: 6px;
   }
 
   .main-nav__link--current {

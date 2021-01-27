@@ -7,12 +7,10 @@ const autoprefixer = require("autoprefixer");
 const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
-/*const uglify = require("gulp-uglify");*/
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
-/*const { plugin } = require("postcss");*/
 const sync = require("browser-sync").create();
 
 // Styles
@@ -62,24 +60,12 @@ const html = () => {
 }
 
 
-// Scripts
-/*const scripts = () => {
-  return gulp.src("source/js/script.js")
-    .pipe(uglify())
-    .pipe(rename("script.min.js"))
-    .pipe(gulp.dest("build/js"))
-    .pipe(sync.stream());
-}
-
-exports.scripts = scripts;*/
-
 
 // Copy
 const copy = (done) => {
   gulp.src([
       "source/fonts/*.{woff2,woff}",
       "source/*.ico",
-      "source/img/**/*.{jpg,png,svg}",
     ], {
       base: "source"
     })
@@ -91,7 +77,6 @@ exports.copy = copy;
 
 
 // Clean
-
 const clean = () => {
   return del("build");
 };
@@ -124,7 +109,7 @@ exports.sprite = sprite;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build"
     },
     cors: true,
     notify: false,
@@ -140,7 +125,6 @@ exports.server = server;
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series("styles"));
   gulp.watch("source/*.html", gulp.series(html, reload));
-  /*gulp.watch("source/js/script.js", gulp.series(scripts))*/
 }
 
 exports.default = gulp.series(
@@ -154,7 +138,6 @@ const build = gulp.series(
   gulp.parallel(
     styles,
     html,
-    /*scripts,*/
     sprite,
     copy,
     images,
@@ -170,12 +153,19 @@ exports.default = gulp.series(
   gulp.parallel(
     styles,
     html,
-   /* scripts,*/
     sprite,
     copy,
+    images,
     createWebp
   ),
   gulp.series(
     server,
     watcher
   ));
+
+
+  // Reload
+const reload = done => {
+  sync.reload();
+  done();
+}
